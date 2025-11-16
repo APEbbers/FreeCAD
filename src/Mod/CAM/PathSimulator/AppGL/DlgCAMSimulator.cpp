@@ -238,10 +238,10 @@ void DlgCAMSimulator::startSimulation(const Part::TopoShape& stock, float qualit
 
 void DlgCAMSimulator::initialize()
 {
-    const qreal retinaScale = devicePixelRatio();
-    mMillSimulator->InitSimulation(mQuality, retinaScale);
+    mMillSimulator->InitSimulation(mQuality);
 
-    glViewport(0, 0, (int)(width() * retinaScale), (int)(height() * retinaScale));
+    const qreal retinaScale = devicePixelRatio();
+    glViewport(0, 0, width() * retinaScale, height() * retinaScale);
 }
 
 void DlgCAMSimulator::checkInitialization()

@@ -253,8 +253,6 @@ class ObjectDressup:
 
         self.horizFeed = self.toolController.HorizFeed.Value
         self.vertFeed = self.toolController.VertFeed.Value
-        self.entranceFeed = self.toolController.LeadInFeed.Value
-        self.exitFeed = self.toolController.LeadOutFeed.Value
 
         obj.Path = self.generateLeadInOutCurve(obj)
 
@@ -501,14 +499,14 @@ class ObjectDressup:
         return App.Vector(math.cos(angle), math.sin(angle), 0)
 
     # Create arc in XY plane with automatic detection G2|G3
-    def createArcMove(self, obj, begin, end, offset, invert, feedRate):
+    def createArcMove(self, obj, begin, end, offset, invert=False):
         param = {
             "X": end.x,
             "Y": end.y,
             "Z": end.z,
             "I": offset.x,
             "J": offset.y,
-            "F": feedRate,
+            "F": self.horizFeed,
         }
         if self.getLeadDir(obj, invert) > 0:
             command = PathLanguage.MoveArcCCW(begin, "G3", param)
@@ -518,8 +516,8 @@ class ObjectDressup:
         return command
 
     # Create arc in XY plane with manually set G2|G3
-    def createArcMoveN(self, obj, begin, end, offset, cmdName, feedRate):
-        param = {"X": end.x, "Y": end.y, "I": offset.x, "J": offset.y, "F": feedRate}
+    def createArcMoveN(self, obj, begin, end, offset, cmdName):
+        param = {"X": end.x, "Y": end.y, "I": offset.x, "J": offset.y, "F": self.horizFeed}
         if cmdName == "G2":
             command = PathLanguage.MoveArcCW(begin, cmdName, param)
         else:
@@ -528,8 +526,8 @@ class ObjectDressup:
         return command
 
     # Create line movement G1
-    def createStraightMove(self, obj, begin, end, feedRate):
-        param = {"X": end.x, "Y": end.y, "Z": end.z, "F": feedRate}
+    def createStraightMove(self, obj, begin, end):
+        param = {"X": end.x, "Y": end.y, "Z": end.z, "F": self.horizFeed}
         command = PathLanguage.MoveStraight(begin, "G1", param)
 
         return command
@@ -551,7 +549,7 @@ class ObjectDressup:
         return stepAngle
 
     # Create vertical arc with move Down by line segments
-    def createArcZMoveDown(self, obj, begin, end, radius, feedRate):
+    def createArcZMoveDown(self, obj, begin, end, radius):
         commands = []
         angle = math.acos((radius - begin.z + end.z) / radius)  # start angle
         stepAngle = self.getStepAngleArcZ(obj, radius)
@@ -570,7 +568,7 @@ class ObjectDressup:
             else:
                 # exclude error of calculations for the last iteration
                 iterEnd = copy.copy(end)
-            param = {"X": iterEnd.x, "Y": iterEnd.y, "Z": iterEnd.z, "F": feedRate}
+            param = {"X": iterEnd.x, "Y": iterEnd.y, "Z": iterEnd.z, "F": self.horizFeed}
             commands.append(PathLanguage.MoveStraight(iterBegin, "G1", param))
             iterBegin = copy.copy(iterEnd)
             iter += 1
@@ -578,7 +576,7 @@ class ObjectDressup:
         return commands
 
     # Create vertical arc with move Up by line segments
-    def createArcZMoveUp(self, obj, begin, end, radius, feedRate):
+    def createArcZMoveUp(self, obj, begin, end, radius):
         commands = []
         angleMax = math.acos((radius - end.z + begin.z) / radius)  # finish angle
         stepAngle = self.getStepAngleArcZ(obj, radius)
@@ -598,7 +596,7 @@ class ObjectDressup:
             else:
                 # exclude the error of calculations of the last point
                 iterEnd = copy.copy(end)
-            param = {"X": iterEnd.x, "Y": iterEnd.y, "Z": iterEnd.z, "F": feedRate}
+            param = {"X": iterEnd.x, "Y": iterEnd.y, "Z": iterEnd.z, "F": self.horizFeed}
             commands.append(PathLanguage.MoveStraight(iterBegin, "G1", param))
             iterBegin = copy.copy(iterEnd)
             iter += 1
@@ -656,11 +654,7 @@ class ObjectDressup:
                 arcBegin = begin + tangent + normal
                 arcCenter = begin + normalMax
                 arcOffset = arcCenter - arcBegin
-                lead.append(
-                    self.createArcMove(
-                        obj, arcBegin, begin, arcOffset, obj.InvertIn, self.entranceFeed
-                    )
-                )
+                lead.append(self.createArcMove(obj, arcBegin, begin, arcOffset, obj.InvertIn))
 
             # prepend "Line" style lead-in - line in XY
             # Line3d the same as Line, but increased Z start point
@@ -674,10 +668,10 @@ class ObjectDressup:
                     * normalLength
                 )
                 lineBegin = begin + tangent + normal
-                lead.append(self.createStraightMove(obj, lineBegin, begin, self.entranceFeed))
+                lead.append(self.createStraightMove(obj, lineBegin, begin))
 
             # prepend "LineZ" style lead-in - vertical inclined line
-            # Should be applied only on straight Path segment
+            # Should be apply only on straight Path segment
             elif styleIn == "LineZ":
                 # tangent vector in XY plane
                 # normal vector is vertical
@@ -689,10 +683,10 @@ class ObjectDressup:
                 tangent = -self.angleToVector(angleTangent) * tangentLength
                 normal = App.Vector(0, 0, normalLength)
                 lineBegin = begin + tangent + normal
-                lead.append(self.createStraightMove(obj, lineBegin, begin, self.entranceFeed))
+                lead.append(self.createStraightMove(obj, lineBegin, begin))
 
             # prepend "ArcZ" style lead-in - vertical Arc
-            # Should be applied only on straight Path segment
+            # Should be apply only on straight Path segment
             elif styleIn == "ArcZ":
                 # tangent vector in XY plane
                 # normal vector is vertical
@@ -708,11 +702,9 @@ class ObjectDressup:
                 tangent = -self.angleToVector(angleTangent) * tangentLength
                 normal = App.Vector(0, 0, normalLength)
                 arcBegin = begin + tangent + normal
-                lead.extend(
-                    self.createArcZMoveDown(obj, arcBegin, begin, arcRadius, self.entranceFeed)
-                )
+                lead.extend(self.createArcZMoveDown(obj, arcBegin, begin, arcRadius))
 
-            # replace 'begin' position with first lead-in command
+            # replace 'begin' position by first lead-in command
             begin = lead[0].positionBegin()
 
             if styleIn in ("Arc3d", "Line3d"):
@@ -736,12 +728,12 @@ class ObjectDressup:
 
         if obj.StyleOut == "Helix" and outInstrPrev:
             """change Z for previous helix lead-out
-            Unable to do it in getLeadEnd(), due to lack of
-            existing information about next moves while creating Lead-out"""
+            Can not do it in getLeadEnd(),
+            because no any information about next moves there while creating Lead-out"""
             posPrevZ = outInstrPrev.positionEnd().z
             if posPrevZ > beginZ:
                 """previous profile upper than this
-                mean processing one stepdown profile"""
+                mean procesing one stepdown profile"""
                 halfStepZ = (posPrevZ - beginZ) / 2
                 outInstrPrev.param["Z"] = posPrevZ - halfStepZ
 
@@ -750,7 +742,7 @@ class ObjectDressup:
             travelToStart = self.getTravelStart(obj, begin, first, outInstrPrev)
         else:
             # exclude any lead-in commands
-            param = {"X": begin.x, "Y": begin.y, "Z": begin.z, "F": self.entranceFeed}
+            param = {"X": begin.x, "Y": begin.y, "Z": begin.z, "F": self.horizFeed}
             travelToStart = [PathLanguage.MoveStraight(None, "G01", param)]
 
         lead = travelToStart + lead
@@ -798,9 +790,7 @@ class ObjectDressup:
                     * normalLength
                 )
                 arcEnd = end + tangent + normal
-                lead.append(
-                    self.createArcMove(obj, end, arcEnd, normalMax, obj.InvertOut, self.exitFeed)
-                )
+                lead.append(self.createArcMove(obj, end, arcEnd, normalMax, obj.InvertOut))
 
             # append "Line" style lead-out
             # Line3d the same as Line, but increased Z start point
@@ -814,7 +804,7 @@ class ObjectDressup:
                     * normalLength
                 )
                 lineEnd = end + tangent + normal
-                lead.append(self.createStraightMove(obj, end, lineEnd, self.exitFeed))
+                lead.append(self.createStraightMove(obj, end, lineEnd))
 
             # append "LineZ" style lead-out - vertical inclined line
             # Should be apply only on straight Path segment
@@ -829,7 +819,7 @@ class ObjectDressup:
                 tangent = self.angleToVector(angleTangent) * tangentLength
                 normal = App.Vector(0, 0, normalLength)
                 lineEnd = end + tangent + normal
-                lead.append(self.createStraightMove(obj, end, lineEnd, self.exitFeed))
+                lead.append(self.createStraightMove(obj, end, lineEnd))
 
             # prepend "ArcZ" style lead-out - vertical Arc
             # Should be apply only on straight Path segment
@@ -848,7 +838,7 @@ class ObjectDressup:
                 tangent = self.angleToVector(angleTangent) * tangentLength
                 normal = App.Vector(0, 0, normalLength)
                 arcEnd = end + tangent + normal
-                lead.extend(self.createArcZMoveUp(obj, end, arcEnd, arcRadius, self.exitFeed))
+                lead.extend(self.createArcZMoveUp(obj, end, arcEnd, arcRadius))
 
         if obj.StyleOut in ("Arc3d", "Line3d"):
             # Up Z end point for Arc3d and Line3d
@@ -857,7 +847,7 @@ class ObjectDressup:
             else:
                 lead[-1].param["Z"] = self.baseOp.StartDepth.Value
 
-        # append travel moves to clearance height after finishing all profiles
+        # append travel moves to clearance height after finish all profiles
         if last and obj.StyleOut != "No Retract":
             lead += self.getTravelEnd(obj)
 
@@ -898,7 +888,7 @@ class ObjectDressup:
 
         return i
 
-    # Increase travel length from 'begin'
+    # Increase travel length from begin
     def getOvertravelIn(self, obj, source, length, start, end):
         startPoint = source[start].positionBegin()
         endPoint = source[end].positionEnd()
@@ -911,12 +901,12 @@ class ObjectDressup:
                 instrLength = instr.pathLength()
 
                 if Path.Geom.isRoughly(measuredLength + instrLength, length, 1):
-                    # get needed length without needing to cut last command
+                    # get needed length and not need to cut last command
                     commands = source[end - i : end + 1]
                     return commands
 
                 elif measuredLength + instrLength > length:
-                    # measured length exceeds needed length and needs cut command
+                    # measured length exceed needed length and need cut command
                     commands = source[end - i + 1 : end + 1]
                     newLength = length - measuredLength
                     newInstr = self.cutInstrBegin(obj, instr, newLength)
@@ -948,12 +938,12 @@ class ObjectDressup:
                 instrLength = instr.pathLength()
 
                 if Path.Geom.isRoughly(measuredLength + instrLength, length, 1):
-                    # get needed length without needing to cut last command
+                    # get needed length and not need to cut last command
                     commands = source[start : start + i + 1]
                     return commands
 
                 elif measuredLength + instrLength > length:
-                    # measured length exceeds needed length and needs cut command
+                    # measured length exceed needed length and need cut command
                     commands = source[start : start + i]
                     newLength = length - measuredLength
                     newInstr = self.cutInstrEnd(obj, instr, newLength)
@@ -1006,7 +996,7 @@ class ObjectDressup:
             n = math.hypot(v.x, v.y)
             u = v / n
             cutEnd = begin + u * newLength
-            command = self.createStraightMove(obj, begin, cutEnd, self.horizFeed)
+            command = self.createStraightMove(obj, begin, cutEnd)
 
         # Cut arc move from begin
         elif instr.isArc():
@@ -1021,7 +1011,7 @@ class ObjectDressup:
             normal = self.angleToVector(angleTangent + self.getPathDir(obj)) * normalLength
             arcEnd = arcBegin + tangent + normal
             cmdName = "G2" if instr.isCW() else "G3"
-            command = self.createArcMoveN(obj, arcBegin, arcEnd, arcOffset, cmdName, self.horizFeed)
+            command = self.createArcMoveN(obj, arcBegin, arcEnd, arcOffset, cmdName)
 
         return command
 
@@ -1035,7 +1025,7 @@ class ObjectDressup:
             n = math.hypot(v.x, v.y)
             u = v / n
             newBegin = end - u * newLength
-            command = self.createStraightMove(obj, newBegin, end, self.horizFeed)
+            command = self.createStraightMove(obj, newBegin, end)
             return command
 
         # Cut arc move from begin
@@ -1052,7 +1042,7 @@ class ObjectDressup:
             arcBegin = arcEnd + tangent + normal
             arcOffset = arcCenter - arcBegin
             cmdName = "G2" if instr.isCW() else "G3"
-            command = self.createArcMoveN(obj, arcBegin, arcEnd, arcOffset, cmdName, self.horizFeed)
+            command = self.createArcMoveN(obj, arcBegin, arcEnd, arcOffset, cmdName)
             return command
 
         return None
@@ -1061,7 +1051,7 @@ class ObjectDressup:
         source = PathLanguage.Maneuver.FromPath(PathUtils.getPathWithPlacement(obj.Base)).instr
         maneuver = PathLanguage.Maneuver()
 
-        # Knowing whether a given instruction is the first cutting move is easy,
+        # Knowing weather a given instruction is the first cutting move is easy,
         # we just use a flag and set it to false afterwards. To find the last
         # cutting move we need to search the list in reverse order.
 
@@ -1077,10 +1067,10 @@ class ObjectDressup:
 
         # Process all instructions
         for i, instr in enumerate(source):
-            # Process without mill instruction
+            # Process not mill instruction
             if not self.isCuttingMove(instr):
                 if not instr.isMove():
-                    # non-move instruction gets added verbatim
+                    # non-move instruction get added verbatim
                     commands.append(instr)
                 else:
                     moveDir = self.getMoveDir(instr)
@@ -1198,8 +1188,6 @@ class TaskDressupLeadInOut(SimpleEditPanel):
     def setupSpinBoxes(self):
         self.connectWidget("InvertIn", self.form.chkInvertDirectionIn)
         self.connectWidget("InvertOut", self.form.chkInvertDirectionOut)
-        self.connectWidget("PercentageRadiusIn", self.form.dspPercentageRadiusIn)
-        self.connectWidget("PercentageRadiusOut", self.form.dspPercentageRadiusOut)
         self.connectWidget("StyleIn", self.form.cboStyleIn)
         self.connectWidget("StyleOut", self.form.cboStyleOut)
         self.radiusIn = PathGuiUtil.QuantitySpinBox(self.form.dspRadiusIn, self.obj, "RadiusIn")

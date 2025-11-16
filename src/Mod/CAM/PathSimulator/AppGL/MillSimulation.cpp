@@ -89,7 +89,7 @@ void MillSimulation::SimNext()
     }
 }
 
-void MillSimulation::InitSimulation(float quality, qreal devicePixelRatio)
+void MillSimulation::InitSimulation(float quality)
 {
     ClearMillPathSegments();
     millPathLine.Clear();
@@ -121,7 +121,7 @@ void MillSimulation::InitSimulation(float quality, qreal devicePixelRatio)
     }
     mNPathSteps = (int)MillPathSegments.size();
     millPathLine.GenerateModel();
-    InitDisplay(quality, devicePixelRatio);
+    InitDisplay(quality);
 }
 
 EndMill* MillSimulation::GetTool(int toolId)
@@ -529,7 +529,7 @@ void MillSimulation::HandleGuiAction(eGuiItems actionItem, bool checked)
 }
 
 
-void MillSimulation::InitDisplay(float quality, qreal devicePixelRatio)
+void MillSimulation::InitDisplay(float quality)
 {
     // generate tools
     for (unsigned int i = 0; i < mToolTable.size(); i++) {
@@ -537,7 +537,7 @@ void MillSimulation::InitDisplay(float quality, qreal devicePixelRatio)
     }
 
     // init 3d display
-    simDisplay.InitGL(devicePixelRatio);
+    simDisplay.InitGL();
 
     // init gui elements
     guiDisplay.InitGui();
