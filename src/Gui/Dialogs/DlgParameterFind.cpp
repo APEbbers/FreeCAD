@@ -323,10 +323,10 @@ void DlgParameterFind::accept()
 
                 if (groupTree->currentItem() != top) {
                     if (top != nullptr) {
-                        groupTree->setCurrentItem(top);                        
+                        groupTree->setCurrentItem(top);
                     }
                 }
-                DlgParameterFind::findItem(current, opt);                
+                DlgParameterFind::findItem(current, opt);
             }
         }
     }
