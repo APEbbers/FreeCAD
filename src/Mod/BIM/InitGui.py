@@ -96,14 +96,9 @@ class BIMWorkbench(Workbench):
             "BIM_AxisTools",
             "Arch_Grid",
             "Arch_SectionPlane",
+            "BIM_Create2DViews",
             "BIM_TDPage",
             "BIM_TDView",
-        ]
-
-        self.create_2dviews = [
-            "BIM_DrawingView",
-            "BIM_Shape2DView",
-            "BIM_Shape2DCut",
         ]
 
         self.bimtools = [
@@ -129,16 +124,7 @@ class BIMWorkbench(Workbench):
             "Arch_Truss",
             "Arch_Equipment",
             "Arch_Rebar",
-        ]
-
-        self.generictools = [
-            "Arch_Profile",
-            "BIM_Box",
-            "BIM_Builder",
-            "Draft_Facebinder",
-            "BIM_Library",
-            "Arch_Component",
-            "Arch_Reference",
+            "BIM_GenericTools",
         ]
 
         self.modify_gen = [
@@ -146,7 +132,7 @@ class BIMWorkbench(Workbench):
             "Draft_Rotate",
             "Draft_Scale",
             "Draft_Mirror",
-            "BIM_Clone",
+            "BIM_CloneTools",
             "BIM_Copy",
             "BIM_SimpleCopy",
             "BIM_Compound",
@@ -354,13 +340,30 @@ class BIMWorkbench(Workbench):
             def IsActive(self):
                 return hasattr(FreeCADGui.getMainWindow().getActiveWindow(), "getSceneGraph")
 
+        class BIM_CloneTools:
+            def GetCommands(self):
+                return ("BIM_Clone", "BIM_LinkMake")
+
+            def GetResources(self):
+                label = QT_TRANSLATE_NOOP("BIM_CloneTools", "Cloning Tools")
+                tooltip = label
+                return {"MenuText": label, "ToolTip": tooltip, "Icon": "BIM_Clone"}
+
+            def IsActive(self):
+                return hasattr(FreeCADGui.getMainWindow().getActiveWindow(), "getSceneGraph")
+
         # create generic tools command
         class BIM_GenericTools:
-            def __init__(self, tools):
-                self.tools = tools
-
             def GetCommands(self):
-                return self.tools
+                return (
+                    "Arch_Profile",
+                    "BIM_Box",
+                    "BIM_Builder",
+                    "Draft_Facebinder",
+                    "BIM_Library",
+                    "Arch_Component",
+                    "Arch_Reference",
+                )
 
             def GetResources(self):
                 t = QT_TRANSLATE_NOOP("BIM_GenericTools", "Generic 3D Tools")
@@ -372,11 +375,8 @@ class BIMWorkbench(Workbench):
 
         # create 2D views command
         class BIM_Create2DViews:
-            def __init__(self, tools):
-                self.tools = tools
-
             def GetCommands(self):
-                return self.tools
+                return ("BIM_DrawingView", "BIM_Shape2DView", "BIM_Shape2DCut")
 
             def GetResources(self):
                 t = QT_TRANSLATE_NOOP("BIM_Create2DViews", "Create 2D Views")
@@ -395,20 +395,15 @@ class BIMWorkbench(Workbench):
         FreeCADGui.addCommand("BIM_BooleanTools", BIM_BooleanTools())
         FreeCADGui.addCommand("BIM_IfcManageTools", BIM_IfcManageTools())
         FreeCADGui.addCommand("BIM_ReportTools", BIM_ReportTools())
-        FreeCADGui.addCommand("BIM_GenericTools", BIM_GenericTools(self.generictools))
-        FreeCADGui.addCommand("BIM_Create2DViews", BIM_Create2DViews(self.create_2dviews))
-
-        # Inject some of the grouped commands
-        self.bimtools.append("BIM_GenericTools")
-        insert_at_index = self.annotationtools.index("BIM_TDPage")
-        self.annotationtools.insert(insert_at_index, "BIM_Create2DViews")
+        FreeCADGui.addCommand("BIM_GenericTools", BIM_GenericTools())
+        FreeCADGui.addCommand("BIM_Create2DViews", BIM_Create2DViews())
+        FreeCADGui.addCommand("BIM_CloneTools", BIM_CloneTools())
 
         # load rebar tools (Reinforcement addon)
-
         try:
             import RebarTools
         except ImportError:
-            pass
+            RebarGroupCommand = None  # for workaround for issue #26539 and #27984
         else:
             # create popup group for Rebar tools
             class RebarGroupCommand:
@@ -563,6 +558,34 @@ class BIMWorkbench(Workbench):
             self.appendMenu(t10, fasteners)
         self.appendMenu(t11, self.utils + ifctools)
         self.appendMenu([t11, t12], nudge)
+
+        # workaround for issue #26539 and #27984:
+        # create tool lists without grouped commands for TaskWatcher
+        # https://github.com/FreeCAD/FreeCAD/issues/26539
+        # https://github.com/FreeCAD/FreeCAD/issues/27984
+        chk = (
+            ("Arch_RebarTools", RebarGroupCommand),
+            ("BIM_ArcTools", BIM_ArcTools),
+            ("BIM_ArrayTools", BIM_ArrayTools),
+            ("BIM_AxisTools", BIM_AxisTools),
+            ("BIM_BooleanTools", BIM_BooleanTools),
+            ("BIM_CloneTools", BIM_CloneTools),
+            ("BIM_Create2DViews", BIM_Create2DViews),
+            ("BIM_GenericTools", BIM_GenericTools),
+            ("BIM_IfcManageTools", BIM_IfcManageTools),
+            ("BIM_OffsetTools", BIM_OffsetTools),
+            ("BIM_ReportTools", BIM_ReportTools),
+            ("BIM_SplineTools", BIM_SplineTools),
+        )
+        for attr in ("draftingtools", "annotationtools", "bimtools", "modify"):
+            lst = getattr(self, attr)
+            for itm in chk:
+                if not itm[0] in lst:
+                    continue
+                idx = lst.index(itm[0])
+                cmds = list(itm[1].GetCommands(itm[1]))
+                lst = lst[:idx] + cmds + lst[idx + 1 :]
+            setattr(self, attr, lst)
 
     def loadPreferences(self):
         """Set up preferences pages"""
