@@ -275,7 +275,7 @@ void DlgParameterFind::accept()
 
         // store the top item, to go back when you have reached the end
         QTreeWidgetItem* current = groupTree->currentItem();
-        QTreeWidgetItem* top = current->parent();
+        QTreeWidgetItem* top = groupTree->topLevelItem(0);
 
         QTreeWidgetItem* next = findItem(current, opt);
         while (!next && current) {
@@ -303,11 +303,11 @@ void DlgParameterFind::accept()
             }
         }
 
-        // if search was successful then make it the current item
-        if (next) {
+        // if search was successful then make it the current item     
+        if (next != nullptr) {
             groupTree->setCurrentItem(next);
         }
-        else {
+        else { 
             auto ret = QMessageBox::warning(
                 this,
                 tr("Not found"),
@@ -320,9 +320,13 @@ void DlgParameterFind::accept()
                 opt.name = ui->checkNames->isChecked();
                 opt.value = ui->checkValues->isChecked();
                 opt.match = ui->checkMatch->isChecked();
-
-                groupTree->setCurrentItem(top);
-                DlgParameterFind::findItem(current, opt);
+                
+                if (groupTree->currentItem() != top) {
+                    if (top != nullptr) {
+                        groupTree->setCurrentItem(top);
+                        DlgParameterFind::findItem(current, opt);
+                    }
+                }
             }
         }
     }
