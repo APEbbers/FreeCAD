@@ -303,11 +303,11 @@ void DlgParameterFind::accept()
             }
         }
 
-        // if search was successful then make it the current item     
+        // if search was successful then make it the current item
         if (next != nullptr) {
             groupTree->setCurrentItem(next);
         }
-        else { 
+        else {
             auto ret = QMessageBox::warning(
                 this,
                 tr("Not found"),
@@ -320,7 +320,7 @@ void DlgParameterFind::accept()
                 opt.name = ui->checkNames->isChecked();
                 opt.value = ui->checkValues->isChecked();
                 opt.match = ui->checkMatch->isChecked();
-                
+
                 if (groupTree->currentItem() != top) {
                     if (top != nullptr) {
                         groupTree->setCurrentItem(top);
