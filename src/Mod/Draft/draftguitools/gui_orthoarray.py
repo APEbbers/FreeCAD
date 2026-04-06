@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   (c) 2020 Eliud Cabrera Castillo <e.cabrera-castillo@tum.de>           *
 # *                                                                         *
@@ -21,6 +23,7 @@
 # *                                                                         *
 # ***************************************************************************
 """Provides GUI tools to create orthogonal Array objects."""
+
 ## @package gui_orthoarray
 # \ingroup draftguitools
 # \brief Provides GUI tools to create orthogonal Array objects.

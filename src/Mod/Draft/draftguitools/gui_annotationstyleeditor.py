@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2020 Yorik van Havre <yorik@uncreated.net>              *
 # *                                                                         *
@@ -19,6 +21,7 @@
 # *                                                                         *
 # ***************************************************************************
 """Provides GUI tools to create and edit annotation styles."""
+
 ## @package gui_annotationstyleeditor
 # \ingroup draftguitools
 # \brief Provides GUI tools to create and edit annotation styles.

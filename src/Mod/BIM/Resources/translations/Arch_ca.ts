@@ -202,8 +202,8 @@
       <translation>Una descripció d'aquesta operació</translation>
     </message>
     <message>
-      <location filename="../ui/dialogTree.ui" line="65"/>
       <location filename="../ui/ArchSchedule.ui" line="68"/>
+      <location filename="../ui/dialogTree.ui" line="65"/>
       <source>Property</source>
       <translation>Propietat</translation>
     </message>
@@ -408,9 +408,9 @@ d'aquest projecte, no importa si s'amplien o no.</translation>
     </message>
     <message>
       <location filename="../ui/DialogDisplayText.ui" line="14"/>
+      <location filename="../ui/dialogExport.ui" line="14"/>
       <location filename="../ui/dialogListWidget.ui" line="14"/>
       <location filename="../ui/dialogQuantitySurveying.ui" line="14"/>
-      <location filename="../ui/dialogExport.ui" line="14"/>
       <location filename="../ui/dialogPhases.ui" line="14"/>
       <source>Dialog</source>
       <translation>Diàleg</translation>
@@ -431,9 +431,9 @@ d'aquest projecte, no importa si s'amplien o no.</translation>
       <translation>Només objectes seleccionats</translation>
     </message>
     <message>
-      <location filename="../ui/dialogIfcQuantities.ui" line="30"/>
-      <location filename="../ui/dialogIfcElements.ui" line="30"/>
       <location filename="../ui/dialogIfcProperties.ui" line="39"/>
+      <location filename="../ui/dialogIfcElements.ui" line="30"/>
+      <location filename="../ui/dialogIfcQuantities.ui" line="30"/>
       <source>Only visible BIM objects</source>
       <translation>Només objectes BIM visibles</translation>
     </message>
@@ -453,9 +453,9 @@ d'aquest projecte, no importa si s'amplien o no.</translation>
       <translation>Només mostrar coincidències</translation>
     </message>
     <message>
-      <location filename="../ui/dialogIfcQuantities.ui" line="80"/>
-      <location filename="../ui/dialogLayersIFC.ui" line="53"/>
       <location filename="../ui/dialogIfcProperties.ui" line="141"/>
+      <location filename="../ui/dialogLayersIFC.ui" line="53"/>
+      <location filename="../ui/dialogIfcQuantities.ui" line="80"/>
       <source>Select All</source>
       <translation>Selecciona-ho tot</translation>
     </message>
@@ -470,8 +470,8 @@ d'aquest projecte, no importa si s'amplien o no.</translation>
       <translation>Propietats de IFC</translation>
     </message>
     <message>
-      <location filename="../ui/dialogIfcPropertiesRedux.ui" line="63"/>
       <location filename="../ui/dialogIfcProperties.ui" line="182"/>
+      <location filename="../ui/dialogIfcPropertiesRedux.ui" line="63"/>
       <source>Delete Selected Property/Property Set</source>
       <translation>Suprimeix la propietat/conjunt de propietats seleccionat</translation>
     </message>
@@ -501,20 +501,20 @@ d'aquest projecte, no importa si s'amplien o no.</translation>
       <translation>Força l'exportació completa de dades paramètriques de FreeCAD</translation>
     </message>
     <message>
-      <location filename="../ui/dialogIfcElements.ui" line="39"/>
       <location filename="../ui/dialogIfcProperties.ui" line="50"/>
+      <location filename="../ui/dialogIfcElements.ui" line="39"/>
       <source>Order by</source>
       <translation>Ordena per</translation>
     </message>
     <message>
-      <location filename="../ui/dialogIfcElements.ui" line="47"/>
       <location filename="../ui/dialogIfcProperties.ui" line="58"/>
+      <location filename="../ui/dialogIfcElements.ui" line="47"/>
       <source>Alphabetical</source>
       <translation>Alfabètic</translation>
     </message>
     <message>
-      <location filename="../ui/dialogIfcElements.ui" line="56"/>
       <location filename="../ui/dialogIfcProperties.ui" line="68"/>
+      <location filename="../ui/dialogIfcElements.ui" line="56"/>
       <source>IFC type</source>
       <translation>Tipus IFC</translation>
     </message>
@@ -524,8 +524,8 @@ d'aquest projecte, no importa si s'amplien o no.</translation>
       <translation>Material</translation>
     </message>
     <message>
-      <location filename="../ui/dialogIfcElements.ui" line="70"/>
       <location filename="../ui/dialogIfcProperties.ui" line="78"/>
+      <location filename="../ui/dialogIfcElements.ui" line="70"/>
       <source>Model structure</source>
       <translation>Estructura del model</translation>
     </message>
@@ -565,8 +565,8 @@ d'aquest projecte, no importa si s'amplien o no.</translation>
       <translation>Evita més avisos en crear nous documents de FreeCAD. Els nous documents no es convertiran automàticament a IFC, però la conversió continua sent possible més tard mitjançant Utilitats → Crea projecte IFC.</translation>
     </message>
     <message>
-      <location filename="../ui/dialogConvertDocument.ui" line="43"/>
       <location filename="../ui/dialogCreateProject.ui" line="30"/>
+      <location filename="../ui/dialogConvertDocument.ui" line="43"/>
       <source>Do not ask again</source>
       <translation>No m'ho tornis a preguntar</translation>
     </message>
@@ -741,8 +741,8 @@ d'aquest projecte, no importa si s'amplien o no.</translation>
       <translation>Afegeix aquesta capa a un projecte IFC</translation>
     </message>
     <message>
-      <location filename="../ui/dialogPhases.ui" line="55"/>
       <location filename="../ui/dialogLayersIFC.ui" line="46"/>
+      <location filename="../ui/dialogPhases.ui" line="55"/>
       <location filename="../ui/dialogProjectManager.ui" line="679"/>
       <source>Delete</source>
       <translation>Elimina</translation>
@@ -781,8 +781,8 @@ d'aquest projecte, no importa si s'amplien o no.</translation>
     </message>
     <message>
       <location filename="../ui/dialogPreflightResults.ui" line="103"/>
-      <location filename="../ui/dialogQuantitySurveying.ui" line="26"/>
       <location filename="../ui/dialogLayersIFC.ui" line="104"/>
+      <location filename="../ui/dialogQuantitySurveying.ui" line="26"/>
       <location filename="../ui/dialogProjectManager.ui" line="717"/>
       <source>OK</source>
       <translation>D'acord</translation>
@@ -843,8 +843,8 @@ d'aquest projecte, no importa si s'amplien o no.</translation>
       <translation>Afegeix un IFC PSet estàndard</translation>
     </message>
     <message>
-      <location filename="../ui/dialogAddPSet.ui" line="43"/>
       <location filename="../ui/dialogAddProperty.ui" line="87"/>
+      <location filename="../ui/dialogAddPSet.ui" line="43"/>
       <location filename="../ui/dialogProjectManager.ui" line="246"/>
       <location filename="../ui/dialogProjectManager.ui" line="366"/>
       <source>Name</source>
@@ -1467,8 +1467,8 @@ d'aquest projecte, no importa si s'amplien o no.</translation>
       <translation>Un o més documents IFC continguts en aquest document FreeCAD han sigut modificats, però no desats. Ara es desaran automàticament.</translation>
     </message>
     <message>
-      <location filename="../ui/dialogImport.ui" line="162"/>
       <location filename="../ui/dialogExport.ui" line="30"/>
+      <location filename="../ui/dialogImport.ui" line="162"/>
       <source>Ask again next time</source>
       <translation>Preguntar de nou el pròxim cop</translation>
     </message>
@@ -1582,8 +1582,8 @@ d'aquest projecte, no importa si s'amplien o no.</translation>
       <translation>Grossària total</translation>
     </message>
     <message>
-      <location filename="../ui/dialogCustomProperties.ui" line="71"/>
       <location filename="../ui/ArchMultiMaterial.ui" line="68"/>
+      <location filename="../ui/dialogCustomProperties.ui" line="71"/>
       <source>Add</source>
       <translation>Afegeix</translation>
     </message>
@@ -1693,8 +1693,8 @@ d'aquest projecte, no importa si s'amplien o no.</translation>
       <translation>Atura</translation>
     </message>
     <message>
-      <location filename="../ui/dialogLibrary.ui" line="95"/>
       <location filename="../ui/ArchNest.ui" line="177"/>
+      <location filename="../ui/dialogLibrary.ui" line="95"/>
       <source>Preview</source>
       <translation>Previsualització</translation>
     </message>
@@ -1716,8 +1716,8 @@ d'aquest projecte, no importa si s'amplien o no.</translation>
       <translation>Material</translation>
     </message>
     <message>
-      <location filename="../ui/dialogCustomProperties.ui" line="23"/>
       <location filename="../ui/ArchMultiMaterial.ui" line="37"/>
+      <location filename="../ui/dialogCustomProperties.ui" line="23"/>
       <source>Name</source>
       <translation>Nom</translation>
     </message>
@@ -1808,11 +1808,6 @@ d'aquest projecte, no importa si s'amplien o no.</translation>
       <translation>Mode en línia</translation>
     </message>
     <message>
-      <location filename="../ui/dialogLibrary.ui" line="206"/>
-      <source>Open the search results inside FreeCAD's web browser instead of the system browser</source>
-      <translation>Obrir els resultats de cerca dins del navegador FreeCAD en contres del navegador del sistema</translation>
-    </message>
-    <message>
       <location filename="../ui/dialogLibrary.ui" line="14"/>
       <source>Library Browser</source>
       <translation>Navegador de biblioteques</translation>
@@ -1838,42 +1833,37 @@ d'aquest projecte, no importa si s'amplien o no.</translation>
       <translation>Permet que la biblioteca es pugui obtenir en línia en comptes de requerir una instal·lació local.</translation>
     </message>
     <message>
-      <location filename="../ui/dialogLibrary.ui" line="209"/>
-      <source>Search using FreeCAD's web view</source>
-      <translation>Cerca amb la vista web de FreeCAD</translation>
-    </message>
-    <message>
-      <location filename="../ui/dialogLibrary.ui" line="216"/>
+      <location filename="../ui/dialogLibrary.ui" line="206"/>
       <source>Opens a 3D preview of the selected file</source>
       <translation>Obre una previsualització 3D del fitxer seleccionat</translation>
     </message>
     <message>
-      <location filename="../ui/dialogLibrary.ui" line="219"/>
+      <location filename="../ui/dialogLibrary.ui" line="209"/>
       <source>Preview model in 3D view</source>
       <translation>Previsualitzar model en una vista 3D</translation>
     </message>
     <message>
-      <location filename="../ui/dialogLibrary.ui" line="229"/>
+      <location filename="../ui/dialogLibrary.ui" line="219"/>
       <source>Show available alternative file formats for library items (STEP, IFC, etc...)</source>
       <translation>Mostrar formats de fitxers alternatius disponibles pels elements de la biblioteca (STEP, IFC, etc.)</translation>
     </message>
     <message>
-      <location filename="../ui/dialogLibrary.ui" line="232"/>
+      <location filename="../ui/dialogLibrary.ui" line="222"/>
       <source>Display alternative formats</source>
       <translation>Mostrar formats alternatius</translation>
     </message>
     <message>
-      <location filename="../ui/dialogLibrary.ui" line="239"/>
+      <location filename="../ui/dialogLibrary.ui" line="229"/>
       <source>Note: STEP and BREP files can be placed at custom location. FCStd and IFC files will be placed where objects are defined in the file.</source>
       <translation>Nota: els fitxers STEP i BREP es poden col·locar a una ubicació personalitzada. Els fitxers FCStd i IFC es col·loquen on els objectes estan definits en el fitxer.</translation>
     </message>
     <message>
-      <location filename="../ui/dialogLibrary.ui" line="252"/>
+      <location filename="../ui/dialogLibrary.ui" line="242"/>
       <source>Save thumbnails</source>
       <translation>Desar miniatures</translation>
     </message>
     <message>
-      <location filename="../ui/dialogLibrary.ui" line="262"/>
+      <location filename="../ui/dialogLibrary.ui" line="252"/>
       <source>Save As…</source>
       <translation>Desa com…</translation>
     </message>
@@ -2123,8 +2113,8 @@ d'aquest projecte, no importa si s'amplien o no.</translation>
       <translation>L'exportació IfcRectangleProfileDef està deshabilitada? (Només per a Revit)</translation>
     </message>
     <message>
-      <location filename="../ui/dialogViews.ui" line="14"/>
       <location filename="../ui/dialogReorder.ui" line="14"/>
+      <location filename="../ui/dialogViews.ui" line="14"/>
       <source>Form</source>
       <translation>Forma</translation>
     </message>
@@ -2895,7 +2885,6 @@ a footprint display mode</source>
     </message>
     <message>
       <location filename="../ui/preferences-sh3d-import.ui" line="32"/>
-      <location filename="../ui/preferences-ifc.ui" line="32"/>
       <source>Show this dialog when importing</source>
       <translation>Mostra aquest diàleg en importar</translation>
     </message>
@@ -3073,62 +3062,62 @@ els models de mobles.</translation>
       <translation>Fusiona-ho al document existent</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="45"/>
+      <location filename="../ui/preferences-ifc.ui" line="32"/>
       <source>Shows verbose debug messages during import and export
 of IFC files in the Report view panel</source>
       <translation>Mostra missatges detallats de depuració durant la importació i exportació de fitxers IFC en el tauler de visualització de l'informe</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="49"/>
+      <location filename="../ui/preferences-ifc.ui" line="36"/>
       <source>Show debug messages</source>
       <translation>Mostra els missatges de depuració</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="62"/>
+      <location filename="../ui/preferences-ifc.ui" line="49"/>
       <source>Clones are used when objects have shared geometry
 One object is the base object, the others are clones.</source>
       <translation>Els clons s'utilitzen quan els objectes comparteixen geometria Un objecte és l'objecte base, els altres són clons.</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="66"/>
+      <location filename="../ui/preferences-ifc.ui" line="53"/>
       <source>Create clones when objects have shared geometry</source>
       <translation>Crea clons si els objectes tenen geometria compartida</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="120"/>
+      <location filename="../ui/preferences-ifc.ui" line="107"/>
       <source>Number of cores to use (experimental)</source>
       <translation>Nombre de nuclis a utilitzar (experimental)</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="156"/>
+      <location filename="../ui/preferences-ifc.ui" line="143"/>
       <source>Import arch IFC objects as</source>
       <translation>Importa objectes d'arquitectura IFC com a</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="163"/>
-      <location filename="../ui/preferences-ifc.ui" line="212"/>
+      <location filename="../ui/preferences-ifc.ui" line="150"/>
+      <location filename="../ui/preferences-ifc.ui" line="199"/>
       <source>Specifies what kind of objects will be created in FreeCAD</source>
       <translation>Defineix el tipus d'objectes que es crearan en el FreeCAD</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="173"/>
+      <location filename="../ui/preferences-ifc.ui" line="160"/>
       <source>Parametric BIM objects</source>
       <translation>Objectes BIM paramètrics</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="178"/>
-      <location filename="../ui/preferences-ifc.ui" line="222"/>
+      <location filename="../ui/preferences-ifc.ui" line="165"/>
+      <location filename="../ui/preferences-ifc.ui" line="209"/>
       <source>Non-parametric BIM objects</source>
       <translation>Objectes BIM no paramètrics</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="183"/>
-      <location filename="../ui/preferences-ifc.ui" line="227"/>
+      <location filename="../ui/preferences-ifc.ui" line="170"/>
+      <location filename="../ui/preferences-ifc.ui" line="214"/>
       <source>Simple Part shapes</source>
       <translation>Formes simples de peça</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="188"/>
+      <location filename="../ui/preferences-ifc.ui" line="175"/>
       <source>One compound per floor</source>
       <translation>Un element compost per planta</translation>
     </message>
@@ -3138,8 +3127,8 @@ One object is the base object, the others are clones.</source>
       <translation>Importació IFC</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="90"/>
-      <location filename="../ui/preferences-ifc.ui" line="110"/>
+      <location filename="../ui/preferences-ifc.ui" line="77"/>
+      <location filename="../ui/preferences-ifc.ui" line="97"/>
       <source>EXPERIMENTAL
 The number of cores to use in multicore mode.
 Keep 0 to disable multicore mode.
@@ -3159,126 +3148,126 @@ si es produeixen errors quan es configuren diversos nuclis.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-sh3d-import.ui" line="67"/>
-      <location filename="../ui/preferences-ifc.ui" line="148"/>
+      <location filename="../ui/preferences-ifc.ui" line="135"/>
       <source>Import Options</source>
       <translation>Opcions d'importació</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="193"/>
+      <location filename="../ui/preferences-ifc.ui" line="180"/>
       <source>Do not import BIM objects</source>
       <translation>No importar objectes BIM</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="205"/>
+      <location filename="../ui/preferences-ifc.ui" line="192"/>
       <source>Import structure IFC objects as</source>
       <translation>Importa objectes d'estructura IFC com a</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="232"/>
+      <location filename="../ui/preferences-ifc.ui" line="219"/>
       <source>One compound for all</source>
       <translation>Un element compost per a tot</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="237"/>
+      <location filename="../ui/preferences-ifc.ui" line="224"/>
       <source>Do not import structural objects</source>
       <translation>No importes objectes estructurals</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="249"/>
+      <location filename="../ui/preferences-ifc.ui" line="236"/>
       <source>Root element:</source>
       <translation>Element arrel:</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="256"/>
+      <location filename="../ui/preferences-ifc.ui" line="243"/>
       <source>Only subtypes of the specified element will be imported.
 Keep the element IfcProduct to import all building elements.</source>
       <translation>Només s’importaran subtipus de l’element especificat. Mantingueu l’element IfcProduct per a importar tots els elements de construcció.</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="275"/>
+      <location filename="../ui/preferences-ifc.ui" line="262"/>
       <source>Openings will be imported as subtractions, otherwise wall shapes
 will already have their openings subtracted</source>
       <translation>Les obertures s’importaran com a subtraccions, en cas contrari les obertures ja s'hauran sostret dels murs</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="279"/>
+      <location filename="../ui/preferences-ifc.ui" line="266"/>
       <source>Separate openings</source>
       <translation>Separa les obertures</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="292"/>
+      <location filename="../ui/preferences-ifc.ui" line="279"/>
       <source>The importer will try to detect extrusions.
 Note that this might slow things down.</source>
       <translation>L’importador intentarà detectar extrusions. Tingueu en compte que això podria alentir les coses.</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="296"/>
+      <location filename="../ui/preferences-ifc.ui" line="283"/>
       <source>Detect extrusions</source>
       <translation>Detecta les extrusions</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="309"/>
+      <location filename="../ui/preferences-ifc.ui" line="296"/>
       <source>Split walls made of multiple layers</source>
       <translation>Separa els murs fets de múltiples capes</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="312"/>
+      <location filename="../ui/preferences-ifc.ui" line="299"/>
       <source>Split multilayer walls</source>
       <translation>Separa els murs multicapa</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="325"/>
+      <location filename="../ui/preferences-ifc.ui" line="312"/>
       <source>Object names will be prefixed with the IFC ID number</source>
       <translation>Els noms d'objectes tindran com a prefix el número d'ID IFC</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="328"/>
+      <location filename="../ui/preferences-ifc.ui" line="315"/>
       <source>Prefix names with ID number</source>
       <translation>Prefixa els noms amb el número d'ID</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="341"/>
+      <location filename="../ui/preferences-ifc.ui" line="328"/>
       <source>If several materials with the same name and color are found in the IFC file,
 they will be treated as one.</source>
       <translation>Si es troben diversos materials amb el mateix nom i color en el fitxer IFC, es consideraran com un únic material.</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="345"/>
+      <location filename="../ui/preferences-ifc.ui" line="332"/>
       <source>Merge materials with same name and same color</source>
       <translation>Fusiona materials amb el mateix nom i el mateix color</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="358"/>
+      <location filename="../ui/preferences-ifc.ui" line="345"/>
       <source>Each object will have their IFC properties stored in a spreadsheet object</source>
       <translation>Cada objecte tindrà les seues propietats IFC emmagatzemades en un full de càlcul</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="361"/>
+      <location filename="../ui/preferences-ifc.ui" line="348"/>
       <source>Import IFC properties in spreadsheet</source>
       <translation>Importa les propietats IFC en un full de càlcul</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="374"/>
+      <location filename="../ui/preferences-ifc.ui" line="361"/>
       <source>IFC files can contain unclean or non-solid geometry. If this option is checked, all the geometry is imported, regardless of their validity.</source>
       <translation>Els fitxers IFC poden contenir una geometria poc neta o no sòlida. Si es selecciona aquesta opció, tota la geometria s’importa, independentment de la seva validesa.</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="377"/>
+      <location filename="../ui/preferences-ifc.ui" line="364"/>
       <source>Allow invalid shapes</source>
       <translation>Permet formes no vàlides</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="392"/>
+      <location filename="../ui/preferences-ifc.ui" line="379"/>
       <source>Exclude list</source>
       <translation>Llista d'exclusió</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="399"/>
+      <location filename="../ui/preferences-ifc.ui" line="386"/>
       <source>Comma-separated list of IFC entities to be excluded from imports</source>
       <translation>Llista separada per comes d'entitats IFC que s'han d'excloure de la importació</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="420"/>
+      <location filename="../ui/preferences-ifc.ui" line="407"/>
       <source>Fit view during import on the imported objects.
 This will slow down the import, but one can watch the import.</source>
       <translation>Ajusta la vista durant la importació dels objectes importats. Això farà més lenta la importació però podeu veure-la.</translation>
@@ -3286,23 +3275,23 @@ This will slow down the import, but one can watch the import.</source>
     <message>
       <location filename="../ui/preferences-sh3d-import.ui" line="464"/>
       <location filename="../ui/preferences-sh3d-import.ui" line="467"/>
-      <location filename="../ui/preferences-ifc.ui" line="424"/>
+      <location filename="../ui/preferences-ifc.ui" line="411"/>
       <source>Fit view while importing</source>
       <translation>Ajusta la vista durant la importació</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="437"/>
+      <location filename="../ui/preferences-ifc.ui" line="424"/>
       <source>Creates a full parametric model on import using stored
 FreeCAD object properties</source>
       <translation>Crea un model paramètric complet en la importació mitjançant propietats d’objecte FreeCAD emmagatzemades</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="441"/>
+      <location filename="../ui/preferences-ifc.ui" line="428"/>
       <source>Import full FreeCAD parametric definitions if available</source>
       <translation>Importa les definicions paramètriques completes si estan disponibles</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="454"/>
+      <location filename="../ui/preferences-ifc.ui" line="441"/>
       <source>If this option is checked, the default 'Project', 'Site', 'Building', and 'Storeys'
 objects that are usually found in an IFC file are not imported, and all objects
 are placed in a 'Group' instead.
@@ -3313,7 +3302,7 @@ es col·loquen en un grup.
 'Construcció' i 'Plantes' continuen important-se si n'hi ha més d'un.</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc.ui" line="460"/>
+      <location filename="../ui/preferences-ifc.ui" line="447"/>
       <source>Replace 'Project', 'Site', 'Building', and 'Storey' with 'Group'</source>
       <translation>Substitueix 'Projecte', 'Lloc', 'Construcció' i 'Planta' per 'Grup'</translation>
     </message>
@@ -3369,9 +3358,9 @@ If using Netgen, make sure that it is available.</source>
       <translation>Tessel·lació</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-webgl.ui" line="26"/>
       <location filename="../ui/preferences-dae.ui" line="26"/>
-      <location filename="../ui/preferences-ifc-export.ui" line="57"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="35"/>
+      <location filename="../ui/preferences-webgl.ui" line="26"/>
       <source>Export Options</source>
       <translation>Opcions d'exportació</translation>
     </message>
@@ -3450,42 +3439,37 @@ La gradació de la mida de la malla local h(x) està vinculat a |Δh(x)| ≤ 1/v
       <translation>Permet quadrilàters</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="41"/>
-      <source>Show this dialog when exporting</source>
-      <translation>Mostra aquest diàleg en exportar</translation>
-    </message>
-    <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="71"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="49"/>
       <source>Export type</source>
       <translation>Tipus d'exportació</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="91"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="69"/>
       <source>Standard model</source>
       <translation>Model estàndard</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="96"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="74"/>
       <source>Structural analysis</source>
       <translation>Anàlisi estructural</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="101"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="79"/>
       <source>Standard + structural</source>
       <translation>Estàndard + estructural</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="128"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="106"/>
       <source>Use triangulation options set in the DAE options page</source>
       <translation>Utilitza les opcions de triangulació establides en la pàgina d'opcions del DAE</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="131"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="109"/>
       <source>Use DAE triangulation options</source>
       <translation>Utililtza les opcions de triangulació DAE</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="144"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="122"/>
       <source>Curved shapes that cannot be represented as curves in IFC
 are decomposed into flat facets.
 If this is checked, an additional calculation is done to join coplanar facets.</source>
@@ -3494,67 +3478,67 @@ es descomponen en facetes planes.
 Si aquesta opció està marcada, es realitzarà un càlcul addicional per a unir les facetes coplanars.</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="149"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="127"/>
       <source>Join coplanar facets when triangulating</source>
       <translation>Uneix facetes coplanars durant la triangulació</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="162"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="140"/>
       <source>When exporting objects without unique ID (UID), the generated UID
 will be stored inside the FreeCAD object for reuse next time that object
 is exported. This leads to smaller differences between file versions.</source>
       <translation>Quan s'exporten objectes sense ID únic (UID), l'UID generat s'emmagatzemarà dins de l'objecte FreeCAD per a reutilitzar-lo la pròxima vegada que s'exporti l'objecte. Això porta a diferències més xicotetes entre les versions de fitxers.</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="167"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="145"/>
       <source>Store IFC unique ID in FreeCAD objects</source>
       <translation>Emmagatzema l'ID únic d'IFC dins de l'objecte FreeCAD</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="189"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="167"/>
       <source>Use IfcOpenShell serializer if available</source>
       <translation>Utilitzeu el serialitzador IfcOpenShell, si està disponible</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="202"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="180"/>
       <source>2D objects will be exported as IfcAnnotation</source>
       <translation>Els objectes 2D s’exportaran com a IfcAnnation</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="205"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="183"/>
       <source>Export 2D objects as IfcAnnotations</source>
       <translation>Exporta objectes 2D com a objectes IfcAnnotations</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="221"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="199"/>
       <source>All FreeCAD object properties will be stored inside the exported objects,
 allowing to recreate a full parametric model on reimport.</source>
       <translation>Totes les propietats d'objecte del FreeCAD s'emmagatzemaran dins dels objectes exportats, i això permet tornar a crear un model paramètric complet en tornar a importar.</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="225"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="203"/>
       <source>Export full FreeCAD parametric model</source>
       <translation>Exporta un model paramètric complet de FreeCAD</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="242"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="220"/>
       <source>Reuse similar entities</source>
       <translation>Reutilitza entitats similars</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="264"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="242"/>
       <source>Disable IfcRectangleProfileDef</source>
       <translation>Desactiva IfcRectangleProfileDef</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="277"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="255"/>
       <source>Some IFC types such as IfcWall or IfcBeam have special standard versions like IfcWallStandardCase or IfcBeamStandardCase. If this option is turned on, FreeCAD will automatically export such objects
 as standard cases when the necessary conditions are met.</source>
       <translation>Alguns tipus d'IFC com ara IfcWall o IfcBeam, tenen versions estàndards especials com IfcWallStandardCase o IfcBeamStandardCase. Si aquesta opció està activada, FreeCAD exportarà automàticament aquests objectes com a casos estàndards quan es compleixin les condicions necessàries.</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="330"/>
-      <location filename="../ui/preferences-ifc-export.ui" line="345"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="308"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="323"/>
       <source>Desired units in the exported IFC file.
 
 Note that IFC files are ALWAYS written in metric units; imperial units
@@ -3567,30 +3551,30 @@ S0ha de tenir en compte que els fitxers IFC SEMPRE fan servir unitats mètriques
 De totes maneres, algunes aplicacions BIM utilitzen aquest factor per escollir quina unitat emprar quan obren el fitxer.</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="375"/>
-      <location filename="../ui/preferences-ifc.ui" line="473"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="353"/>
+      <location filename="../ui/preferences-ifc.ui" line="460"/>
       <source>Check also native-IFC-specific preferences under BIM -&gt; Native IFC</source>
       <translation>Comprovar també les preferències específiques de NativeIFC a BIM -&gt; NativeIFC</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="391"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="369"/>
       <source>If no building is found in the FreeCAD document, a default one will be added.
 Warning: The IFC standard asks for at least one building in each file. By turning this option off, a non-standard IFC file will be produced.</source>
       <translation>Si no es troba cap edifici al document de FreeCAD, se n'afegirà un de predeterminat.
 Avís: L'estàndard IFC demana com a mínim un edifici a cada fitxer. Si es desactiva aquesta opció, es generarà un fitxer IFC no estàndard.</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="395"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="373"/>
       <source>Add default building if one is not found in the document</source>
       <translation>Afegeix una construcció predeterminada si no se'n troba cap en el document</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="435"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="413"/>
       <source>Export nested groups as assemblies</source>
       <translation>Exporta grups niats com a muntatges</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="281"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="259"/>
       <source>Auto-detect and export as standard cases when applicable</source>
       <translation>Detecta automàticament i exporta com a cas estàndard quan sigui aplicable</translation>
     </message>
@@ -3601,14 +3585,13 @@ Avís: L'estàndard IFC demana com a mínim un edifici a cada fitxer. Si es desa
     </message>
     <message>
       <location filename="../ui/preferences-sh3d-import.ui" line="26"/>
-      <location filename="../ui/preferences-ifc-export.ui" line="35"/>
       <location filename="../ui/preferences-ifc.ui" line="26"/>
       <source>General Options</source>
       <translation>Opcions generals</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="65"/>
-      <location filename="../ui/preferences-ifc-export.ui" line="78"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="43"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="56"/>
       <source>The type of objects to export:
 - Standard model: solid objects
 - Structural analysis: wireframe model for structural calculations
@@ -3619,18 +3602,18 @@ Avís: L'estàndard IFC demana com a mínim un edifici a cada fitxer. Si es desa
 - Estàndard + estructural: Ambdós tipus de models</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="111"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="89"/>
       <source>Some IFC viewers do not like objects exported as extrusions.
 Use this to force all objects to be exported as BREP geometry.</source>
       <translation>A alguns visualitzadors d'IFC no els agraden els objectes exportats com a extrusions. Utilitzeu aquesta funcionalitat per a forçar que tots els objectes s'exporten com a geometria BREP.</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="115"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="93"/>
       <source>Force export as BREP</source>
       <translation>Força l'exportació com a BREP</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="183"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="161"/>
       <source>IFCOpenShell is a library that enables importing IFC files.
 Its serializer functionality allows giving it an OCC shape and it will
 produce adequate IFC geometry: NURBS, faceted, or anything else.
@@ -3638,13 +3621,13 @@ Note: The serializer is still an experimental feature!</source>
       <translation>IFCOpenShell és una biblioteca que permet importar fitxers IFC. La seva funcionalitat de serialitzador permet donar-li una forma OCC i produirà una geometria IFC adequada: NURBS, facetes o qualsevol altra cosa. Nota: El serialitzador no deixa de ser una característica experimental!</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="238"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="216"/>
       <source>When possible, similar entities will be used only once in the file if possible.
 This can reduce the file size considerably, but will make it less easily readable.</source>
       <translation>Quan sigui possible, s'utilitzaran entitats semblants sols una vegada en el fitxer, si és possible. Això pot reduir molt la mida del fitxer, però el farà menys llegible.</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="258"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="236"/>
       <source>When possible, IFC objects that are extruded rectangles will be
 exported as IfcRectangleProfileDef.
 However, some other applications might have problems importing that entity.
@@ -3652,59 +3635,59 @@ If this is the case, it can disabled and then all profiles will be exported as I
       <translation>Si és possible, els objectes IFC que són rectangles extrudits s'exportaran com a IfcRectangleProfileDef. Tanmateix, algunes altres aplicacions poden tenir problemes per a importar aquesta entitat. Si és així, es pot deshabilitar i tots els perfils s'exportaran com a IfcArbitraryClosedProfileDef.</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="294"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="272"/>
       <source>If no site is found in the FreeCAD document, a default one will be added.
 A site is not mandatory but a common practice is to have at least one in the file.</source>
       <translation>Si no es troba cap lloc en el document FreeCAD, se n'afegirà un per defecte. Un lloc no és obligatori, però una pràctica habitual és tenir-ne almenys un al fitxer.</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="298"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="276"/>
       <source>Add default site if one is not found in the document</source>
       <translation>Afegeix un lloc per defecte si no se'n troba cap en el document</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="411"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="389"/>
       <source>If not checked, standard FreeCAD groups (App::DocumentObjectGroup) will not be exported as IfcGroup or IfcElementAssembly.\nTheir children will be re-parented to the container of the skipped group in the IFC structure.</source>
       <translation>Si no es marca, els grups estàndard de FreeCAD (App::DocumentObjectGroup) no s'exportaran com a IfcGroup o IfcElementAssembly.\nEls seus fills es tornaran a assignar com a pares al contenidor del grup omès a l'estructura IFC.</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="414"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="392"/>
       <source>Export FreeCAD Groups</source>
       <translation>Exporta grups de FreeCAD</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="432"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="410"/>
       <source>In FreeCAD, it is possible to nest groups inside buildings or storeys. If this option is disabled, FreeCAD groups will be saved as IfcGroups and aggregated to the building structure. Aggregating non-building elements such as IfcGroups is however not recommended by the IFC standards. It is therefore also possible to export these groups as IfcElementAssemblies, which produces an IFC-compliant file.</source>
       <translation>A FreeCAD, és possible nidar grups dins d'edificis o plantes. Si aquesta opció està desactivada, els grups de FreeCAD es desaran com a IfcGroups i s'agregaran a l'estructura de la construcció. Tanmateix, els estàndards IFC no recomanen l'agregació d'elements no constructius com IfcGroups. Per tant, també és possible exportar aquests grups com IfcElementAssemblies, el que produeix un fitxer compatible amb IFC.</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="385"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="363"/>
       <source>IFC standard compliance</source>
       <translation>Compliment de l'estàndard IFC</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="311"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="289"/>
       <source>If no building storey is found in the FreeCAD document, a default one will be added.
 A building storey is not mandatory but a common practice to have at least one in the file.</source>
       <translation>Si no es troba cap pis de construcció en el document FreeCAD, se n'afegirà un per defecte. Una planta de construcció no és obligatori, però una pràctica habitual és tenir-ne almenys un al fitxer.</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="315"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="293"/>
       <source>Add default building storey if one is not found in the document</source>
       <translation>Afegeix una planta de construcció per defecte si no se'n troba cap en el document</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="338"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="316"/>
       <source>IFC file units</source>
       <translation>Unitats de fitxer IFC</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="360"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="338"/>
       <source>Metric</source>
       <translation>Sistema mètric decimal</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-ifc-export.ui" line="365"/>
+      <location filename="../ui/preferences-ifc-export.ui" line="343"/>
       <source>Imperial</source>
       <translation>Sistema anglosaxó d'unitats</translation>
     </message>
@@ -3797,8 +3780,8 @@ La plantilla predeterminada es troba a:
       <translation>Opcions de l'estructura</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="1699"/>
       <location filename="../../ArchStructure.py" line="554"/>
+      <location filename="../../ArchCommands.py" line="1699"/>
       <location filename="../../bimcommands/BimProfile.py" line="83"/>
       <source>Category</source>
       <translation>Categoria</translation>
@@ -3806,32 +3789,32 @@ La plantilla predeterminada es troba a:
     <message>
       <location filename="../../ArchStructure.py" line="561"/>
       <location filename="../../bimcommands/BimProfile.py" line="90"/>
+      <location filename="../../bimcommands/BimWindow.py" line="431"/>
       <location filename="../../bimcommands/BimPanel.py" line="184"/>
-      <location filename="../../bimcommands/BimWindow.py" line="429"/>
       <source>Preset</source>
       <translation>Predefinits</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="1332"/>
-      <location filename="../../ArchStructure.py" line="570"/>
       <location filename="../../ArchPrecast.py" line="1719"/>
-      <location filename="../../bimcommands/BimPanel.py" line="194"/>
+      <location filename="../../ArchStructure.py" line="570"/>
+      <location filename="../../ArchCommands.py" line="1332"/>
       <location filename="../../bimcommands/BimWall.py" line="341"/>
+      <location filename="../../bimcommands/BimPanel.py" line="194"/>
       <source>Length</source>
       <translation>Longitud</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="584"/>
       <location filename="../../ArchPrecast.py" line="1720"/>
-      <location filename="../../bimcommands/BimPanel.py" line="201"/>
+      <location filename="../../ArchStructure.py" line="584"/>
       <location filename="../../bimcommands/BimWall.py" line="348"/>
+      <location filename="../../bimcommands/BimPanel.py" line="201"/>
       <source>Width</source>
       <translation>Amplària</translation>
     </message>
     <message>
+      <location filename="../../ArchPrecast.py" line="1721"/>
       <location filename="../../ArchRoof.py" line="1084"/>
       <location filename="../../ArchStructure.py" line="591"/>
-      <location filename="../../ArchPrecast.py" line="1721"/>
       <location filename="../../bimcommands/BimWall.py" line="355"/>
       <source>Height</source>
       <translation>Alçària</translation>
@@ -3852,39 +3835,39 @@ La plantilla predeterminada es troba a:
       <translation>Intercanviar Longitud/Amplada</translation>
     </message>
     <message>
-      <location filename="../../ArchWall.py" line="721"/>
       <location filename="../../ArchStructure.py" line="1170"/>
+      <location filename="../../ArchWall.py" line="721"/>
       <source>This mesh is an invalid solid</source>
       <translation>Aquesta malla no és un sòlid vàlid</translation>
     </message>
     <message>
-      <location filename="../../ArchPanel.py" line="319"/>
       <location filename="../../ArchStructure.py" line="1289"/>
+      <location filename="../../ArchPanel.py" line="319"/>
       <source>Facemaker returned an error</source>
       <translation>El generador de cares ha retornat un error</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1690"/>
+      <location filename="../../ArchStructure.py" line="1700"/>
       <source>Node Tools</source>
       <translation>Eines de Node</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1715"/>
+      <location filename="../../ArchStructure.py" line="1725"/>
       <source>Extends the nodes of this element to reach the nodes of another element</source>
       <translation>Estén els nodes d'aquest element per a arribar als nodes d'un altre element</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1726"/>
+      <location filename="../../ArchStructure.py" line="1736"/>
       <source>Connects nodes of this element with the nodes of another element</source>
       <translation>Connecta els nodes d'aquest element amb els nodes d'un altre element</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1737"/>
+      <location filename="../../ArchStructure.py" line="1747"/>
       <source>Toggles all structural nodes of the document on/off</source>
       <translation>Activa/desactiva tots els nodes estructurals en el document</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1744"/>
+      <location filename="../../ArchStructure.py" line="1754"/>
       <source>Extrusion Tools</source>
       <translation>Eines d'extrusió</translation>
     </message>
@@ -3904,85 +3887,85 @@ La plantilla predeterminada es troba a:
       <translation>Error: la forma base no s'ha pogut extrudir al llarg de l'objecte guia</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1695"/>
+      <location filename="../../ArchStructure.py" line="1705"/>
       <source>Reset Nodes</source>
       <translation>Reinicialitza els nodes</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1702"/>
+      <location filename="../../ArchStructure.py" line="1712"/>
       <source>Edit Nodes</source>
       <translation>Edita els nodes</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1708"/>
+      <location filename="../../ArchStructure.py" line="1718"/>
       <source>Extend Nodes</source>
       <translation>Estén els nodes</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1721"/>
+      <location filename="../../ArchStructure.py" line="1731"/>
       <source>Connect Nodes</source>
       <translation>Connecta els nodes</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1732"/>
+      <location filename="../../ArchStructure.py" line="1742"/>
       <source>Toggle All Nodes</source>
       <translation>Commuta tots els nodes</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1749"/>
-      <location filename="../../ArchStructure.py" line="1951"/>
+      <location filename="../../ArchStructure.py" line="1759"/>
+      <location filename="../../ArchStructure.py" line="1961"/>
       <source>Select Tool</source>
       <translation>Selecciona una eina</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1754"/>
+      <location filename="../../ArchStructure.py" line="1764"/>
       <source>Selects object or edges to be used as a tool (extrusion path)</source>
       <translation>Seleccionar objectes o arestes per utilitzar-les com a eina (camí d'extrusió)</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1779"/>
-      <location filename="../../ArchStructure.py" line="1829"/>
+      <location filename="../../ArchStructure.py" line="1789"/>
+      <location filename="../../ArchStructure.py" line="1839"/>
       <source>Choose another Structure object:</source>
       <translation>Tria un altre objecte d'estructura:</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1785"/>
-      <location filename="../../ArchStructure.py" line="1835"/>
+      <location filename="../../ArchStructure.py" line="1795"/>
+      <location filename="../../ArchStructure.py" line="1845"/>
       <source>The chosen object is not a Structure</source>
       <translation>L'objecte triat no és una Estructura</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1790"/>
-      <location filename="../../ArchStructure.py" line="1840"/>
+      <location filename="../../ArchStructure.py" line="1800"/>
+      <location filename="../../ArchStructure.py" line="1850"/>
       <source>The chosen object has no structural nodes</source>
       <translation>L'objecte triat no té nodes estructurals</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1795"/>
-      <location filename="../../ArchStructure.py" line="1845"/>
+      <location filename="../../ArchStructure.py" line="1805"/>
+      <location filename="../../ArchStructure.py" line="1855"/>
       <source>One of these objects has more than 2 nodes</source>
       <translation>Un d'aquests objectes té més de 2 nodes</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1808"/>
-      <location filename="../../ArchStructure.py" line="1858"/>
+      <location filename="../../ArchStructure.py" line="1818"/>
+      <location filename="../../ArchStructure.py" line="1868"/>
       <source>Unable to find a suitable intersection point</source>
       <translation>No s'ha pogut trobar un punt d'intersecció adequat</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1812"/>
+      <location filename="../../ArchStructure.py" line="1822"/>
       <source>Intersection found.
 </source>
       <translation>S'ha trobat una intersecció.
 </translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1863"/>
+      <location filename="../../ArchStructure.py" line="1873"/>
       <source>Intersection found.</source>
       <translation>Intersecció trobada.</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1916"/>
+      <location filename="../../ArchStructure.py" line="1926"/>
       <source>Done</source>
       <translation>Fet</translation>
     </message>
@@ -4089,8 +4072,8 @@ Si Carrer = 0, la carrera es calcula de manera que l'alçada sigui la mateixa qu
       <translation>Voladiu</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimRoof.py" line="93"/>
       <location filename="../../bimcommands/BimSpace.py" line="70"/>
+      <location filename="../../bimcommands/BimRoof.py" line="93"/>
       <source>Please select a base object</source>
       <translation>Seleccioneu un objecte base</translation>
     </message>
@@ -4111,12 +4094,12 @@ Si Carrer = 0, la carrera es calcula de manera que l'alçada sigui la mateixa qu
       <translation>IdRel</translation>
     </message>
     <message>
-      <location filename="../../ArchWindowPresets.py" line="563"/>
+      <location filename="../../ArchWindowPresets.py" line="554"/>
       <source>Door</source>
       <translation>Porta</translation>
     </message>
     <message>
-      <location filename="../../ArchWindowPresets.py" line="566"/>
+      <location filename="../../ArchWindowPresets.py" line="557"/>
       <source>Opening</source>
       <translation>Obertura</translation>
     </message>
@@ -4181,90 +4164,88 @@ Si Carrer = 0, la carrera es calcula de manera que l'alçada sigui la mateixa qu
       <translation>Actualitzant</translation>
     </message>
     <message>
-      <location filename="../../ArchReference.py" line="170"/>
+      <location filename="../../ArchReference.py" line="171"/>
       <source>Part not found in file</source>
       <translation>No s'ha trobat la peça al fitxer</translation>
     </message>
     <message>
-      <location filename="../../ArchReference.py" line="192"/>
-      <location filename="../../ArchReference.py" line="237"/>
-      <location filename="../../ArchReference.py" line="433"/>
-      <location filename="../../ArchReference.py" line="868"/>
+      <location filename="../../ArchReference.py" line="198"/>
+      <location filename="../../ArchReference.py" line="243"/>
+      <location filename="../../ArchReference.py" line="443"/>
+      <location filename="../../ArchReference.py" line="885"/>
       <source>NativeIFC not available - unable to process IFC files</source>
       <translation>NativeIFC no està disponible - no es poden processar els fitxers IFC</translation>
     </message>
     <message>
-      <location filename="../../ArchReference.py" line="290"/>
+      <location filename="../../ArchReference.py" line="296"/>
       <source>Error removing splitter</source>
       <translation>Error en eliminar el separador</translation>
     </message>
     <message>
-      <location filename="../../ArchReference.py" line="700"/>
+      <location filename="../../ArchReference.py" line="722"/>
       <source>Reload reference</source>
       <translation>Torna a carregar la referència</translation>
     </message>
     <message>
-      <location filename="../../ArchReference.py" line="706"/>
+      <location filename="../../ArchReference.py" line="728"/>
       <source>Open reference</source>
       <translation>Obre la referència</translation>
     </message>
     <message>
-      <location filename="../../ArchReference.py" line="744"/>
+      <location filename="../../ArchReference.py" line="766"/>
       <source>Unable to get lightWeight node for object referenced in</source>
       <translation>No s'ha pogut obtenir el node lightWeight de l'objecte referenciat a</translation>
     </message>
     <message>
-      <location filename="../../ArchReference.py" line="753"/>
-      <location filename="../../ArchReference.py" line="757"/>
+      <location filename="../../ArchReference.py" line="776"/>
+      <location filename="../../ArchReference.py" line="780"/>
       <source>Invalid lightWeight node for object referenced in</source>
       <translation>Node lightWeight invàlid de l'objecte referenciat a</translation>
     </message>
     <message>
-      <location filename="../../ArchReference.py" line="767"/>
-      <location filename="../../ArchReference.py" line="773"/>
-      <location filename="../../ArchReference.py" line="801"/>
-      <location filename="../../ArchReference.py" line="807"/>
+      <location filename="../../ArchReference.py" line="792"/>
+      <location filename="../../ArchReference.py" line="824"/>
       <source>Invalid root node in</source>
       <translation>Node arrel invàlid a</translation>
     </message>
     <message>
-      <location filename="../../ArchReference.py" line="892"/>
+      <location filename="../../ArchReference.py" line="909"/>
       <source>External reference</source>
       <translation>Referència externa</translation>
     </message>
     <message>
-      <location filename="../../ArchReference.py" line="894"/>
+      <location filename="../../ArchReference.py" line="911"/>
       <source>External file</source>
       <translation>Fitxer extern</translation>
     </message>
     <message>
-      <location filename="../../ArchReference.py" line="898"/>
+      <location filename="../../ArchReference.py" line="915"/>
       <source>Open</source>
       <translation>Obre</translation>
     </message>
     <message>
-      <location filename="../../ArchReference.py" line="905"/>
+      <location filename="../../ArchReference.py" line="922"/>
       <source>Part to use:</source>
       <translation>Peça a utilitzar:</translation>
     </message>
     <message>
-      <location filename="../../ArchReference.py" line="910"/>
+      <location filename="../../ArchReference.py" line="927"/>
       <source>Choose File</source>
       <translation>Triar arxiu</translation>
     </message>
     <message>
-      <location filename="../../ArchReference.py" line="921"/>
-      <location filename="../../ArchReference.py" line="984"/>
+      <location filename="../../ArchReference.py" line="938"/>
+      <location filename="../../ArchReference.py" line="1001"/>
       <source>None (Use whole object)</source>
       <translation>Cap (Utilitzar l'objecte sencer)</translation>
     </message>
     <message>
-      <location filename="../../ArchReference.py" line="972"/>
+      <location filename="../../ArchReference.py" line="989"/>
       <source>Reference files</source>
       <translation>Fitxers de referència</translation>
     </message>
     <message>
-      <location filename="../../ArchReference.py" line="974"/>
+      <location filename="../../ArchReference.py" line="991"/>
       <source>Choose reference file</source>
       <translation>Trieu un fitxer de referència</translation>
     </message>
@@ -4341,7 +4322,7 @@ Si Carrer = 0, la carrera es calcula de manera que l'alçada sigui la mateixa qu
     <message>
       <location filename="../../bimcommands/BimWindow.py" line="109"/>
       <location filename="../../bimcommands/BimWindow.py" line="136"/>
-      <location filename="../../bimcommands/BimWindow.py" line="191"/>
+      <location filename="../../bimcommands/BimWindow.py" line="193"/>
       <source>Create Window</source>
       <translation>Crea una finestra</translation>
     </message>
@@ -4351,217 +4332,217 @@ Si Carrer = 0, la carrera es calcula de manera que l'alçada sigui la mateixa qu
       <translation>Trieu una cara d'un objecte existent o seleccioneu una preselecció</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimWindow.py" line="241"/>
+      <location filename="../../bimcommands/BimWindow.py" line="243"/>
       <source>Window not based on sketch. Window not aligned or resized.</source>
       <translation>La finestra no està basada en un croquis. La finestra no està alineada o redimensionada.</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimWindow.py" line="260"/>
+      <location filename="../../bimcommands/BimWindow.py" line="262"/>
       <source>No Width and/or Height constraint in window sketch. Window not resized.</source>
       <translation>No hi ha cap restricció d'Amplada/Alçada a la finestra del croquis. No s'ha redimensionat la finestra.</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimWindow.py" line="263"/>
+      <location filename="../../bimcommands/BimWindow.py" line="265"/>
       <source>No window found. Cannot continue.</source>
       <translation>No s'ha trobat cap finestra. No es pot continuar.</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimWindow.py" line="378"/>
+      <location filename="../../bimcommands/BimWindow.py" line="380"/>
       <source>Window options</source>
       <translation>Opcions de finestra</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimWindow.py" line="382"/>
+      <location filename="../../bimcommands/BimWindow.py" line="384"/>
       <source>Auto include in host object</source>
       <translation>Inclou automàticament a l'objecte amfitrió</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimWindow.py" line="391"/>
+      <location filename="../../bimcommands/BimWindow.py" line="393"/>
       <source>Sill height</source>
       <translation>Alçada de suport</translation>
     </message>
     <message>
-      <location filename="../../ArchWindow.py" line="1162"/>
-      <location filename="../../ArchWindow.py" line="1765"/>
+      <location filename="../../ArchWindow.py" line="1078"/>
+      <location filename="../../ArchWindow.py" line="1681"/>
       <source>Invert Opening Direction</source>
       <translation>Invertir direcció d'obertura</translation>
     </message>
     <message>
-      <location filename="../../ArchWindow.py" line="1173"/>
-      <location filename="../../ArchWindow.py" line="1768"/>
+      <location filename="../../ArchWindow.py" line="1089"/>
+      <location filename="../../ArchWindow.py" line="1684"/>
       <source>Invert Hinge Position</source>
       <translation>Invertir posició de la frontissa</translation>
     </message>
     <message>
-      <location filename="../../ArchWindow.py" line="1235"/>
+      <location filename="../../ArchWindow.py" line="1151"/>
       <source>This window has no defined opening</source>
       <translation>Aquesta finestra no té obertura definida</translation>
     </message>
     <message>
-      <location filename="../../ArchWindow.py" line="1525"/>
-      <location filename="../../ArchWindow.py" line="1576"/>
+      <location filename="../../ArchWindow.py" line="1441"/>
+      <location filename="../../ArchWindow.py" line="1492"/>
       <source>Get selected edge</source>
       <translation>Obtingui la vora seleccionada</translation>
     </message>
     <message>
-      <location filename="../../ArchWindow.py" line="1678"/>
+      <location filename="../../ArchWindow.py" line="1594"/>
       <source>Unable to create component</source>
       <translation>No s'ha pogut crear el component</translation>
     </message>
     <message>
-      <location filename="../../ArchWindow.py" line="1716"/>
+      <location filename="../../ArchWindow.py" line="1632"/>
       <source>Window elements</source>
       <translation>Elements de finestra</translation>
     </message>
     <message>
-      <location filename="../../ArchWindow.py" line="1717"/>
+      <location filename="../../ArchWindow.py" line="1633"/>
       <source>Hole wire</source>
       <translation>Nombre de fils</translation>
     </message>
     <message>
-      <location filename="../../ArchWindow.py" line="1724"/>
+      <location filename="../../ArchWindow.py" line="1640"/>
       <source>The number of the wire that defines a hole in the host object. A value of zero will automatically adopt the largest wire</source>
       <translation>El nombre de fils que defineixen un forat en l'objecte amfitrió. Un valor de zero automàticament adoptarà el fil més gran</translation>
     </message>
     <message>
-      <location filename="../../ArchWindow.py" line="1725"/>
+      <location filename="../../ArchWindow.py" line="1641"/>
       <source>Pick Selected</source>
       <translation>Tria la selecció</translation>
     </message>
     <message>
-      <location filename="../../ArchWindow.py" line="1731"/>
+      <location filename="../../ArchWindow.py" line="1647"/>
       <source>Create/Update Component</source>
       <translation>Crear/actualitzar component</translation>
     </message>
     <message>
-      <location filename="../../ArchWindow.py" line="1735"/>
+      <location filename="../../ArchWindow.py" line="1651"/>
       <source>Create new Component</source>
       <translation>Crear un nou component</translation>
     </message>
     <message>
-      <location filename="../../ArchWindow.py" line="1739"/>
+      <location filename="../../ArchWindow.py" line="1655"/>
       <source>Frame depth</source>
       <translation>Profunditat del marc</translation>
     </message>
     <message>
-      <location filename="../../ArchWindow.py" line="1750"/>
+      <location filename="../../ArchWindow.py" line="1666"/>
       <source>If this is checked, the window's Frame property value will be added to the value entered here</source>
       <translation>Si està marcat, el valor predeterminat del marc d'aquesta finestra s'afegirà al valor introduït aquí</translation>
     </message>
     <message>
-      <location filename="../../ArchWindow.py" line="1758"/>
+      <location filename="../../ArchWindow.py" line="1674"/>
       <source>If this is checked, the window's Offset property value will be added to the value entered here</source>
       <translation>Si està marcat, el valor predeterminat del desplaçament d'aquesta finestra s'afegirà al valor introduït aquí</translation>
     </message>
     <message>
-      <location filename="../../ArchAxisSystem.py" line="338"/>
+      <location filename="../../ArchWindow.py" line="1642"/>
       <location filename="../../ArchSpace.py" line="944"/>
-      <location filename="../../ArchSectionPlane.py" line="1736"/>
-      <location filename="../../ArchComponent.py" line="2343"/>
-      <location filename="../../ArchWindow.py" line="1726"/>
       <location filename="../../ArchAxis.py" line="955"/>
+      <location filename="../../ArchComponent.py" line="2384"/>
+      <location filename="../../ArchSectionPlane.py" line="1737"/>
+      <location filename="../../ArchAxisSystem.py" line="338"/>
       <source>Remove</source>
       <translation>Elimina</translation>
     </message>
     <message>
-      <location filename="../../ArchAxisSystem.py" line="339"/>
+      <location filename="../../ArchWindow.py" line="1643"/>
       <location filename="../../ArchSpace.py" line="938"/>
-      <location filename="../../ArchComponent.py" line="2344"/>
-      <location filename="../../ArchWindow.py" line="1727"/>
       <location filename="../../ArchAxis.py" line="956"/>
+      <location filename="../../ArchComponent.py" line="2385"/>
+      <location filename="../../ArchAxisSystem.py" line="339"/>
       <source>Add</source>
       <translation>Afegeix</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="459"/>
-      <location filename="../../ArchMaterial.py" line="786"/>
-      <location filename="../../ArchReference.py" line="695"/>
-      <location filename="../../ArchIFCView.py" line="63"/>
-      <location filename="../../ArchAxisSystem.py" line="222"/>
-      <location filename="../../ArchSectionPlane.py" line="1503"/>
-      <location filename="../../ArchSite.py" line="1288"/>
-      <location filename="../../ArchSchedule.py" line="766"/>
+      <location filename="../../ArchWindow.py" line="1644"/>
       <location filename="../../ArchGrid.py" line="384"/>
-      <location filename="../../ArchComponent.py" line="1874"/>
-      <location filename="../../ArchWindow.py" line="1728"/>
       <location filename="../../ArchAxis.py" line="788"/>
+      <location filename="../../ArchMaterial.py" line="470"/>
+      <location filename="../../ArchMaterial.py" line="797"/>
+      <location filename="../../ArchSite.py" line="1294"/>
+      <location filename="../../ArchComponent.py" line="1915"/>
+      <location filename="../../ArchSectionPlane.py" line="1504"/>
+      <location filename="../../ArchAxisSystem.py" line="222"/>
+      <location filename="../../ArchReference.py" line="717"/>
+      <location filename="../../ArchIFCView.py" line="63"/>
+      <location filename="../../ArchSchedule.py" line="766"/>
       <source>Edit</source>
       <translation>Edita</translation>
     </message>
     <message>
-      <location filename="../../ArchWindow.py" line="1732"/>
+      <location filename="../../ArchWindow.py" line="1648"/>
       <source>Base 2D object</source>
       <translation>Objecte base 2D</translation>
     </message>
     <message>
-      <location filename="../../ArchWindow.py" line="1733"/>
-      <location filename="../../ArchWindow.py" line="1738"/>
+      <location filename="../../ArchWindow.py" line="1649"/>
+      <location filename="../../ArchWindow.py" line="1654"/>
       <source>Wires</source>
       <translation>Filferros</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="2351"/>
-      <location filename="../../ArchWindow.py" line="1734"/>
+      <location filename="../../ArchWindow.py" line="1650"/>
+      <location filename="../../ArchComponent.py" line="2392"/>
       <source>Components</source>
       <translation>Components</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="868"/>
-      <location filename="../../ArchMaterial.py" line="894"/>
-      <location filename="../../ArchWindow.py" line="1736"/>
+      <location filename="../../ArchWindow.py" line="1652"/>
+      <location filename="../../ArchMaterial.py" line="879"/>
+      <location filename="../../ArchMaterial.py" line="905"/>
       <source>Name</source>
       <translation>Nom</translation>
     </message>
     <message>
+      <location filename="../../ArchWindow.py" line="1653"/>
+      <location filename="../../ArchComponent.py" line="2460"/>
       <location filename="../../ArchCommands.py" line="1701"/>
-      <location filename="../../ArchComponent.py" line="2419"/>
-      <location filename="../../ArchWindow.py" line="1737"/>
       <location filename="../../bimcommands/BimIfcProperties.py" line="478"/>
       <source>Type</source>
       <translation>Tipus</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="870"/>
-      <location filename="../../ArchMaterial.py" line="896"/>
+      <location filename="../../ArchMaterial.py" line="881"/>
+      <location filename="../../ArchMaterial.py" line="907"/>
       <location filename="../../ArchRoof.py" line="1082"/>
       <location filename="../../bimcommands/BimPanel.py" line="208"/>
       <source>Thickness</source>
       <translation>Gruix</translation>
     </message>
     <message>
+      <location filename="../../ArchWindow.py" line="1656"/>
       <location filename="../../ArchPrecast.py" line="1725"/>
-      <location filename="../../ArchWindow.py" line="1740"/>
       <location filename="../../bimcommands/BimWall.py" line="371"/>
       <source>Offset</source>
       <translation>Equidistància</translation>
     </message>
     <message>
-      <location filename="../../ArchWindow.py" line="1741"/>
+      <location filename="../../ArchWindow.py" line="1657"/>
       <source>Hinge</source>
       <translation>Frontissa</translation>
     </message>
     <message>
-      <location filename="../../ArchWindow.py" line="1742"/>
+      <location filename="../../ArchWindow.py" line="1658"/>
       <source>Opening mode</source>
       <translation>Mode d'obertura</translation>
     </message>
     <message>
-      <location filename="../../ArchWindow.py" line="1743"/>
+      <location filename="../../ArchWindow.py" line="1659"/>
       <source>+ Frame property</source>
       <translation>+ Propietat del marc</translation>
     </message>
     <message>
-      <location filename="../../ArchWindow.py" line="1751"/>
+      <location filename="../../ArchWindow.py" line="1667"/>
       <source>+ Offset property</source>
       <translation>+ Propietat de desplaçament</translation>
     </message>
     <message>
-      <location filename="../../ArchWindow.py" line="1759"/>
+      <location filename="../../ArchWindow.py" line="1675"/>
       <source>Get Selected Edge</source>
       <translation>Obtenir la vora seleccionada</translation>
     </message>
     <message>
-      <location filename="../../ArchWindow.py" line="1762"/>
+      <location filename="../../ArchWindow.py" line="1678"/>
       <source>Press to retrieve the selected edge</source>
       <translation>Premeu-ho per a recuperar la vora seleccionada</translation>
     </message>
@@ -4586,10 +4567,10 @@ Si Carrer = 0, la carrera es calcula de manera que l'alçada sigui la mateixa qu
       <translation>Seleccioneu com a mínim un eix</translation>
     </message>
     <message>
+      <location filename="../../ArchAxis.py" line="954"/>
+      <location filename="../../ArchComponent.py" line="2391"/>
       <location filename="../../ArchAxisSystem.py" line="337"/>
       <location filename="../../Arch.py" line="104"/>
-      <location filename="../../ArchComponent.py" line="2350"/>
-      <location filename="../../ArchAxis.py" line="954"/>
       <source>Axes</source>
       <translation>Eixos</translation>
     </message>
@@ -4599,8 +4580,8 @@ Si Carrer = 0, la carrera es calcula de manera que l'alçada sigui la mateixa qu
       <translation>Components del sistema d'eixos</translation>
     </message>
     <message>
-      <location filename="../../importers/importOBJ.py" line="302"/>
-      <location filename="../../importers/importOBJ.py" line="340"/>
+      <location filename="../../importers/importOBJ.py" line="301"/>
+      <location filename="../../importers/importOBJ.py" line="339"/>
       <location filename="../../importers/importWebGL.py" line="371"/>
       <location filename="../../importers/importJSON.py" line="62"/>
       <source>Successfully written</source>
@@ -4692,8 +4673,8 @@ Si Carrer = 0, la carrera es calcula de manera que l'alçada sigui la mateixa qu
       <translation>Crea un material múltiple</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="869"/>
-      <location filename="../../ArchMaterial.py" line="895"/>
+      <location filename="../../ArchMaterial.py" line="880"/>
+      <location filename="../../ArchMaterial.py" line="906"/>
       <location filename="../../Arch.py" line="533"/>
       <source>Material</source>
       <translation>Material</translation>
@@ -4709,17 +4690,17 @@ Si Carrer = 0, la carrera es calcula de manera que l'alçada sigui la mateixa qu
       <translation>Fusiona els duplicats</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="934"/>
+      <location filename="../../ArchMaterial.py" line="945"/>
       <source>New layer</source>
       <translation>Capa nova</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="971"/>
+      <location filename="../../ArchMaterial.py" line="982"/>
       <source>Total thickness</source>
       <translation>Grossària total</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="985"/>
+      <location filename="../../ArchMaterial.py" line="996"/>
       <source>depends on the object</source>
       <translation>depèn de l'objecte</translation>
     </message>
@@ -4790,8 +4771,8 @@ Si Carrer = 0, la carrera es calcula de manera que l'alçada sigui la mateixa qu
       <translation>Suprimeix l'extensió</translation>
     </message>
     <message>
-      <location filename="../../Arch.py" line="497"/>
       <location filename="../../ArchGrid.py" line="488"/>
+      <location filename="../../Arch.py" line="497"/>
       <source>Grid</source>
       <translation>Quadrícula</translation>
     </message>
@@ -4936,8 +4917,8 @@ Si Carrer = 0, la carrera es calcula de manera que l'alçada sigui la mateixa qu
       <translation>Inclinació</translation>
     </message>
     <message>
-      <location filename="../../Arch.py" line="207"/>
       <location filename="../../ArchPrecast.py" line="1723"/>
+      <location filename="../../Arch.py" line="207"/>
       <source>Level</source>
       <translation>Nivell</translation>
     </message>
@@ -4988,8 +4969,8 @@ Si Carrer = 0, la carrera es calcula de manera que l'alçada sigui la mateixa qu
       <translation>S'ha produït un error en calcular la forma de</translation>
     </message>
     <message>
+      <location filename="../../ArchStructure.py" line="2075"/>
       <location filename="../../ArchPanel.py" line="563"/>
-      <location filename="../../ArchStructure.py" line="2065"/>
       <source>Could not compute a shape</source>
       <translation>No s'ha pogut calcular la forma</translation>
     </message>
@@ -5014,8 +4995,8 @@ Si Carrer = 0, la carrera es calcula de manera que l'alçada sigui la mateixa qu
       <translation>Mur cortina</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimCurtainwall.py" line="62"/>
       <location filename="../../bimcommands/BimTruss.py" line="61"/>
+      <location filename="../../bimcommands/BimCurtainwall.py" line="62"/>
       <source>Select only one base object or none</source>
       <translation>Seleccioneu només un objecte base, o cap</translation>
     </message>
@@ -5179,10 +5160,10 @@ Si Carrer = 0, la carrera es calcula de manera que l'alçada sigui la mateixa qu
       <translation>L'objecte no té atributs d'IFC configurables</translation>
     </message>
     <message>
+      <location filename="../../ArchComponent.py" line="2461"/>
       <location filename="../../ArchCommands.py" line="1702"/>
       <location filename="../../ArchSchedule.py" line="989"/>
       <location filename="../../ArchSchedule.py" line="1014"/>
-      <location filename="../../ArchComponent.py" line="2420"/>
       <location filename="../../bimcommands/BimIfcProperties.py" line="479"/>
       <source>Value</source>
       <translation>Valor</translation>
@@ -5251,8 +5232,8 @@ S'interromp la creació de la planta.</translation>
       <translation>Distància</translation>
     </message>
     <message>
-      <location filename="../../ArchRoof.py" line="1079"/>
       <location filename="../../ArchAxis.py" line="966"/>
+      <location filename="../../ArchRoof.py" line="1079"/>
       <source>Angle</source>
       <translation>Angle</translation>
     </message>
@@ -5267,22 +5248,22 @@ S'interromp la creació de la planta.</translation>
       <translation>S'ha trobat una forma que conté corbes, s'està triangulant</translation>
     </message>
     <message>
-      <location filename="../../importers/importOBJ.py" line="451"/>
+      <location filename="../../importers/importOBJ.py" line="450"/>
       <source>Successfully imported</source>
       <translation>S'ha importat correctament</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="1101"/>
+      <location filename="../../ArchComponent.py" line="1120"/>
       <source>Error computing the shape of this object</source>
       <translation>S'ha produït un error en calcular la forma d'aquest objecte</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="1127"/>
+      <location filename="../../ArchComponent.py" line="1146"/>
       <source>has no solid</source>
       <translation>no té cap sòlid</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="1136"/>
+      <location filename="../../ArchComponent.py" line="1155"/>
       <source>has an invalid shape</source>
       <translation>té una forma invàlida</translation>
     </message>
@@ -5293,144 +5274,144 @@ S'interromp la creació de la planta.</translation>
       <location filename="../../ArchPrecast.py" line="605"/>
       <location filename="../../ArchPrecast.py" line="773"/>
       <location filename="../../ArchPrecast.py" line="894"/>
-      <location filename="../../ArchComponent.py" line="1140"/>
+      <location filename="../../ArchComponent.py" line="1159"/>
       <source>has a null shape</source>
       <translation>té una forma nul·la</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="1362"/>
+      <location filename="../../ArchComponent.py" line="1397"/>
       <source>Could not project face from {self.obj.Label}
 </source>
       <translation>No s'ha pogut projectar la cara des de {self.obj.Label}
 </translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="1377"/>
+      <location filename="../../ArchComponent.py" line="1410"/>
       <source>Could not determine if a face from {self.obj.Label} is vertical: normalAt() failed
 </source>
       <translation>No s'ha pogut determinar si una cara de {self.obj.Label} és vertical: normalAt() ha fallat
 </translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="1397"/>
-      <source>Could not determine if a face from {self.obj.Label} is horizontal: normalAt() failed
-</source>
-      <translation>No s'ha pogut determinar si una cara de {self.obj.Label} és horitzontal: normalAt() ha fallat
-</translation>
-    </message>
-    <message>
-      <location filename="../../ArchComponent.py" line="1479"/>
+      <location filename="../../ArchComponent.py" line="1518"/>
       <source>Error computing areas for {self.obj.Label}: unable to project or make face with normal {face.normalAt(0, 0)}. Area values will be reset to 0.
 </source>
       <translation>Error en calcular les àrees per a {self.obj.Label}: no es pot projectar o fer que la cara estigui amb la normal {face.normalAt(0, 0)}. Els valors de l'àrea es restabliran a 0.
 </translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="2345"/>
+      <location filename="../../ArchComponent.py" line="2386"/>
       <source>Components of This Object</source>
       <translation>Components d'aquest objecte</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="2355"/>
+      <location filename="../../ArchComponent.py" line="2396"/>
       <source>Edit IFC Properties</source>
       <translation>Editar les propietats IFC</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="2356"/>
+      <location filename="../../ArchComponent.py" line="2397"/>
       <source>Edit Standard Code</source>
       <translation>Editar codi estàndard</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="1277"/>
+      <location filename="../../ArchComponent.py" line="1296"/>
       <source>Wrong base type</source>
       <translation>Tipus de base erroni</translation>
     </message>
     <message>
-      <location filename="../../ArchSite.py" line="1294"/>
-      <location filename="../../ArchComponent.py" line="1881"/>
+      <location filename="../../ArchSite.py" line="1300"/>
+      <location filename="../../ArchComponent.py" line="1922"/>
       <source>Toggle Subcomponents</source>
       <translation>Commuta els subcomponents</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="2011"/>
+      <location filename="../../ArchComponent.py" line="2052"/>
       <source>Closing Sketch edit</source>
       <translation>S'està tancant l'edició del Croquis</translation>
     </message>
     <message>
+      <location filename="../../ArchComponent.py" line="2383"/>
       <location filename="../../ArchCommands.py" line="287"/>
-      <location filename="../../ArchComponent.py" line="2342"/>
       <source>Component</source>
       <translation>Component</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="2035"/>
+      <location filename="../../ArchComponent.py" line="2076"/>
       <source>Select a base object</source>
       <translation>Seleccionar un objecte base</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="2346"/>
+      <location filename="../../ArchComponent.py" line="1498"/>
+      <source>Error computing areas for {self.obj.Label}: unable to project non-planar faces with holes. Area values will be reset to 0.
+</source>
+      <translation>Error en calcular les àrees per a {self.obj.Label}: no es poden projectar cares amb forats. Els valors de l'àrea es restabliran a 0.
+</translation>
+    </message>
+    <message>
+      <location filename="../../ArchComponent.py" line="2387"/>
       <source>Base component</source>
       <translation>Component base</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="2347"/>
+      <location filename="../../ArchComponent.py" line="2388"/>
       <source>Additions</source>
       <translation>Addicions</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="2348"/>
+      <location filename="../../ArchComponent.py" line="2389"/>
       <source>Subtractions</source>
       <translation>Subtraccions</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="2349"/>
+      <location filename="../../ArchComponent.py" line="2390"/>
       <source>Objects</source>
       <translation>Objectes</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="2352"/>
+      <location filename="../../ArchComponent.py" line="2393"/>
       <source>Fixtures</source>
       <translation>Accessoris</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="2353"/>
+      <location filename="../../ArchComponent.py" line="2394"/>
       <source>Group</source>
       <translation>Grup</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="2354"/>
+      <location filename="../../ArchComponent.py" line="2395"/>
       <source>Hosts</source>
       <translation>Amfitrions</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="2418"/>
+      <location filename="../../ArchComponent.py" line="2459"/>
       <location filename="../../bimcommands/BimIfcProperties.py" line="477"/>
       <source>Property</source>
       <translation>Propietat</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="2426"/>
+      <location filename="../../ArchComponent.py" line="2467"/>
       <source>Add property</source>
       <translation>Afegeix una propietat</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="2430"/>
+      <location filename="../../ArchComponent.py" line="2471"/>
       <source>Add property set</source>
       <translation>Afegeix conjunt de propietats</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="2431"/>
+      <location filename="../../ArchComponent.py" line="2472"/>
       <source>New...</source>
       <translation>Nou...</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="2582"/>
+      <location filename="../../ArchComponent.py" line="2623"/>
       <location filename="../../bimcommands/BimIfcProperties.py" line="634"/>
       <source>New property</source>
       <translation>Propietat nova</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="2619"/>
+      <location filename="../../ArchComponent.py" line="2660"/>
       <location filename="../../bimcommands/BimIfcProperties.py" line="683"/>
       <source>New property set</source>
       <translation>Conjunt de propietats nou</translation>
@@ -5462,97 +5443,97 @@ S'interromp la creació de la planta.</translation>
       <translation>Crea un pla de secció</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1508"/>
+      <location filename="../../ArchSectionPlane.py" line="1509"/>
       <source>Toggle Cutview</source>
       <translation>Alterna la vista de tall</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1729"/>
+      <location filename="../../ArchSectionPlane.py" line="1730"/>
       <source>Scope</source>
       <translation>Abast</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1732"/>
+      <location filename="../../ArchSectionPlane.py" line="1733"/>
       <source>Placement and Visuals</source>
       <translation>Posicionament i visuals</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1735"/>
+      <location filename="../../ArchSectionPlane.py" line="1736"/>
       <source>Objects seen by this section plane</source>
       <translation>Objectes vists per aquest pla de secció</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1741"/>
+      <location filename="../../ArchSectionPlane.py" line="1742"/>
       <source>Removes highlighted objects from the list above</source>
       <translation>Elimina els objectes ressaltats de la llista anterior</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1742"/>
+      <location filename="../../ArchSectionPlane.py" line="1743"/>
       <source>Add Selected</source>
       <translation>Afegir selecció</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1747"/>
+      <location filename="../../ArchSectionPlane.py" line="1748"/>
       <source>Adds selected objects to the scope of this section plane</source>
       <translation>Afegeix els objectes seleccionats a l'àmbit d'aquest pla de secció</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1748"/>
+      <location filename="../../ArchSectionPlane.py" line="1749"/>
       <source>Cut View</source>
       <translation>Vista de tall</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1755"/>
+      <location filename="../../ArchSectionPlane.py" line="1756"/>
       <source>Creates a live cut in the 3D view, hiding geometry on one side of the plane to see inside your model</source>
       <translation>Crea un tall en directe a la vista 3D, amagant la geometria en un costat del pla per veure'l dins del model</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1756"/>
+      <location filename="../../ArchSectionPlane.py" line="1757"/>
       <source>Rotate by 90°</source>
       <translation>Rotar 90°</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1760"/>
+      <location filename="../../ArchSectionPlane.py" line="1761"/>
       <source>Rotates the plane around its local X-axis</source>
       <translation>Gira el pla al voltant de l'eix X local</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1764"/>
+      <location filename="../../ArchSectionPlane.py" line="1765"/>
       <source>Rotates the plane around its local Y-axis</source>
       <translation>Gira el pla al voltant de l'eix Y local</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1768"/>
+      <location filename="../../ArchSectionPlane.py" line="1769"/>
       <source>Rotates the plane around its local Z-axis</source>
       <translation>Gira el pla al voltant de l'eix Z local</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1769"/>
+      <location filename="../../ArchSectionPlane.py" line="1770"/>
       <source>Resize to Fit</source>
       <translation>Redimensiona per a ajustar</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1775"/>
+      <location filename="../../ArchSectionPlane.py" line="1776"/>
       <source>Recenter Plane</source>
       <translation>Centrar el pla</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1757"/>
+      <location filename="../../ArchSectionPlane.py" line="1758"/>
       <source>Rotate X</source>
       <translation>Rotar X</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1761"/>
+      <location filename="../../ArchSectionPlane.py" line="1762"/>
       <source>Rotate Y</source>
       <translation>Rotar Y</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1765"/>
+      <location filename="../../ArchSectionPlane.py" line="1766"/>
       <source>Rotate Z</source>
       <translation>Rotar Z</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1774"/>
+      <location filename="../../ArchSectionPlane.py" line="1775"/>
       <source>Resizes the plane to fit the objects in the list above</source>
       <translation>Redimensiona el pla per a ajustar els objectes de la llista anterior</translation>
     </message>
@@ -5562,13 +5543,13 @@ S'interromp la creació de la planta.</translation>
       <translation>Centre</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1780"/>
+      <location filename="../../ArchSectionPlane.py" line="1781"/>
       <source>Centers the plane on the objects in the list above</source>
       <translation>Centra el pla sobre els objectes de la llista anterior</translation>
     </message>
     <message>
-      <location filename="../../ArchBuilding.py" line="214"/>
       <location filename="../../Arch.py" line="234"/>
+      <location filename="../../ArchBuilding.py" line="214"/>
       <source>Building</source>
       <translation>Construcció</translation>
     </message>
@@ -5698,7 +5679,7 @@ S'avorta la creació de la construcció.</translation>
       <translation>Error: No es pot modificar l'objecte base d'aquest mur</translation>
     </message>
     <message>
-      <location filename="../../ArchWall.py" line="1715"/>
+      <location filename="../../ArchWall.py" line="1755"/>
       <source>Flip Direction</source>
       <translation>Invertir direcció</translation>
     </message>
@@ -5886,33 +5867,33 @@ S'avorta la creació de la construcció.</translation>
       <translation>Crea una vista 2D</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="1151"/>
+      <location filename="../../ArchBuildingPart.py" line="1148"/>
       <source>Active</source>
       <translation>Actiu</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="1162"/>
+      <location filename="../../ArchBuildingPart.py" line="1159"/>
       <source>Set Working Plane</source>
       <translation>Estableix el pla de treball</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="1172"/>
+      <location filename="../../ArchBuildingPart.py" line="1169"/>
       <source>Write Camera Position</source>
       <translation>Escriu la posició de la càmera</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="1178"/>
+      <location filename="../../ArchBuildingPart.py" line="1175"/>
       <source>New Group</source>
       <translation>Grup nou</translation>
     </message>
     <message>
       <location filename="../../ArchMaterial.py" line="100"/>
-      <location filename="../../ArchBuildingPart.py" line="1182"/>
+      <location filename="../../ArchBuildingPart.py" line="1179"/>
       <source>Reorder Children Alphabetically</source>
       <translation>Reorganitza els fills alfabèticament</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="1186"/>
+      <location filename="../../ArchBuildingPart.py" line="1183"/>
       <source>Clone Level Up</source>
       <translation>Clonar el nivell cap amunt</translation>
     </message>
@@ -5960,7 +5941,7 @@ S'avorta la creació de la construcció.</translation>
     <name>App::Property</name>
     <message>
       <location filename="../../ArchStructure.py" line="783"/>
-      <location filename="../../ArchStructure.py" line="1941"/>
+      <location filename="../../ArchStructure.py" line="1951"/>
       <source>An optional extrusion path for this element</source>
       <translation>Un camí d'extrusió opcional per a aquest element</translation>
     </message>
@@ -6005,14 +5986,14 @@ S'avorta la creació de la construcció.</translation>
       <translation>Rotació de Base al llarg de l'eix de l'Eina (només es fa servir si BasePerpendicularToTool és Cert)</translation>
     </message>
     <message>
-      <location filename="../../ArchPanel.py" line="85"/>
       <location filename="../../ArchStructure.py" line="879"/>
+      <location filename="../../ArchPanel.py" line="85"/>
       <source>The length of this element, if not based on a profile</source>
       <translation>La longitud d'aquest element, si no està basat en el perfil</translation>
     </message>
     <message>
-      <location filename="../../ArchPanel.py" line="95"/>
       <location filename="../../ArchStructure.py" line="889"/>
+      <location filename="../../ArchPanel.py" line="95"/>
       <source>The width of this element, if not based on a profile</source>
       <translation>L'amplada d'aquest element, si no està basat en el perfil</translation>
     </message>
@@ -6022,15 +6003,15 @@ S'avorta la creació de la construcció.</translation>
       <translation>L'alçada o profunditat d'extrusió d'aquest element. Mantingui 0 per a automàtica</translation>
     </message>
     <message>
+      <location filename="../../ArchStructure.py" line="911"/>
       <location filename="../../ArchPanel.py" line="209"/>
       <location filename="../../ArchWall.py" line="272"/>
-      <location filename="../../ArchStructure.py" line="911"/>
       <source>The normal extrusion direction of this object (keep (0,0,0) for automatic normal)</source>
       <translation>La direcció d'extrusió normal d'aquest objecte (mantingui (0,0,0) per a automàtica)</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="919"/>
       <location filename="../../ArchPrecast.py" line="101"/>
+      <location filename="../../ArchStructure.py" line="919"/>
       <source>The structural nodes of this element</source>
       <translation>Els nodes estructurals d'aquest element</translation>
     </message>
@@ -6045,8 +6026,8 @@ S'avorta la creació de la construcció.</translation>
       <translation>Distància de separació entre la línia central i la línia de nodes</translation>
     </message>
     <message>
-      <location filename="../../ArchPanel.py" line="197"/>
       <location filename="../../ArchStructure.py" line="950"/>
+      <location filename="../../ArchPanel.py" line="197"/>
       <source>The facemaker type to use to build the profile of this object</source>
       <translation>El tipus de generador de cares que s'ha d'utilitzar per a construir el perfil d'aquest objecte</translation>
     </message>
@@ -6063,276 +6044,276 @@ S'avorta la creació de la construcció.</translation>
       <translation>Seleccioneu el conjunt de propietats definit per l'usuari per utilitzar-lo en la creació de formes variants, amb el mateix ArchSketch. </translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1522"/>
+      <location filename="../../ArchStructure.py" line="1532"/>
       <source>If the nodes are visible or not</source>
       <translation>Si els nodes són visibles o no</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1530"/>
+      <location filename="../../ArchStructure.py" line="1540"/>
       <source>The width of the nodes line</source>
       <translation>L'amplada de la línia de nodes</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1538"/>
+      <location filename="../../ArchStructure.py" line="1548"/>
       <source>The size of the node points</source>
       <translation>La mida dels punts de node</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1547"/>
+      <location filename="../../ArchStructure.py" line="1557"/>
       <source>The color of the nodes line</source>
       <translation>El color de la línia de nodes</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1556"/>
+      <location filename="../../ArchStructure.py" line="1566"/>
       <source>The type of structural node</source>
       <translation>El tipus de node estructural</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1989"/>
+      <location filename="../../ArchStructure.py" line="1999"/>
       <source>Axes systems this structure is built on</source>
       <translation>Sistema d'eixos sobre el qual està construïda aquesta estructura</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="1999"/>
+      <location filename="../../ArchStructure.py" line="2009"/>
       <source>The element numbers to exclude when this structure is based on axes</source>
       <translation>El nombre d'elements que s'han d'excloure quan l'estructura es basa en eixos</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="2006"/>
+      <location filename="../../ArchStructure.py" line="2016"/>
       <source>If true the element are aligned with axes</source>
       <translation>Si s'estableix a cert, l'element s'alinea amb els eixos</translation>
     </message>
     <message>
-      <location filename="../../ArchEquipment.py" line="195"/>
+      <location filename="../../ArchEquipment.py" line="103"/>
       <source>The model description of this equipment</source>
       <translation>La descripció del model d'aquest equipament</translation>
     </message>
     <message>
-      <location filename="../../ArchEquipment.py" line="203"/>
+      <location filename="../../ArchEquipment.py" line="111"/>
       <source>The URL of the product page of this equipment</source>
       <translation>L'URL de la pàgina del producte d'aquest equipament</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="198"/>
-      <location filename="../../ArchEquipment.py" line="211"/>
+      <location filename="../../ArchEquipment.py" line="119"/>
+      <location filename="../../ArchMaterial.py" line="208"/>
       <source>A standard code (MasterFormat, OmniClass,…)</source>
       <translation>Un codi estàndard (MasterFormat, OmniClass)</translation>
     </message>
     <message>
-      <location filename="../../ArchEquipment.py" line="219"/>
+      <location filename="../../ArchEquipment.py" line="127"/>
       <source>Additional snap points for this equipment</source>
       <translation>Punts d'ajust addicionals d'aquest equipament</translation>
     </message>
     <message>
-      <location filename="../../ArchEquipment.py" line="229"/>
+      <location filename="../../ArchEquipment.py" line="137"/>
       <source>The electric power needed by this equipment in Watts</source>
       <translation>La potència elèctrica necessària d'aquest equipament en Watts</translation>
     </message>
     <message>
-      <location filename="../../ArchBuilding.py" line="308"/>
       <location filename="../../Arch.py" line="237"/>
       <location filename="../../Arch.py" line="310"/>
+      <location filename="../../ArchBuilding.py" line="308"/>
       <source>The type of this building</source>
       <translation>El tipus d'aquesta construcció</translation>
     </message>
     <message>
       <location filename="../../ArchFloor.py" line="236"/>
-      <location filename="../../ArchBuildingPart.py" line="229"/>
+      <location filename="../../ArchBuildingPart.py" line="230"/>
       <source>The height of this object</source>
       <translation>L'alçada d'aquest objecte</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="240"/>
+      <location filename="../../ArchBuildingPart.py" line="241"/>
       <source>If true, the height value propagates to contained objects if the height of those objects is set to 0</source>
       <translation>Si és cert, el valor d'alçada es propaga als objectes continguts, si l'alçada d'aquests objectes s'estableix a 0</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="249"/>
+      <location filename="../../ArchBuildingPart.py" line="250"/>
       <source>The level of the (0,0,0) point of this level</source>
       <translation>El nivell del punt (0,0,0) d'aquest nivell</translation>
     </message>
     <message>
       <location filename="../../ArchFloor.py" line="244"/>
-      <location filename="../../ArchBuildingPart.py" line="257"/>
+      <location filename="../../ArchBuildingPart.py" line="258"/>
       <source>The computed floor area of this floor</source>
       <translation>L'àrea calculada d'aquesta planta</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="265"/>
-      <location filename="../../ArchComponent.py" line="256"/>
+      <location filename="../../ArchComponent.py" line="258"/>
+      <location filename="../../ArchBuildingPart.py" line="266"/>
       <source>An optional description for this component</source>
       <translation>Una descripció opcional d'aquest component</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="273"/>
-      <location filename="../../ArchComponent.py" line="264"/>
+      <location filename="../../ArchComponent.py" line="266"/>
+      <location filename="../../ArchBuildingPart.py" line="274"/>
       <source>An optional tag for this component</source>
       <translation>Una etiqueta opcional d'aquest component</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="954"/>
-      <location filename="../../ArchBuildingPart.py" line="281"/>
+      <location filename="../../ArchSectionPlane.py" line="958"/>
+      <location filename="../../ArchBuildingPart.py" line="282"/>
       <source>The shape of this object</source>
       <translation>La forma d'aquest objecte</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="292"/>
+      <location filename="../../ArchBuildingPart.py" line="293"/>
       <source>This property stores an OpenInventor representation for this object</source>
       <translation>Aquesta propietat emmagatzema una representació d'OpenInventor per a aquest objecte</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="304"/>
+      <location filename="../../ArchBuildingPart.py" line="305"/>
       <source>If true, only solids will be collected by this object when referenced from other files</source>
       <translation>Si és cert, aquest objecte només recopilarà sòlids quan es faci referència des d'altres fitxers</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="316"/>
+      <location filename="../../ArchBuildingPart.py" line="317"/>
       <source>A MaterialName:SolidIndexesList map that relates material names with solid indexes to be used when referencing this object from other files</source>
       <translation>Un mapa MaterialName:SolidIndexesList que relaciona noms de materials amb índexs de sòlids utilitzat en referenciar aquest objecte des d'altres fitxers</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1126"/>
-      <location filename="../../ArchBuildingPart.py" line="519"/>
+      <location filename="../../ArchSectionPlane.py" line="1130"/>
+      <location filename="../../ArchBuildingPart.py" line="540"/>
       <source>The line width of this object</source>
       <translation>El gruix de la línia d'aquest objecte</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="528"/>
+      <location filename="../../ArchBuildingPart.py" line="549"/>
       <source>An optional unit to express levels</source>
       <translation>Una unitat opcional per expressar nivells</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="536"/>
+      <location filename="../../ArchBuildingPart.py" line="557"/>
       <source>A transformation to apply to the level mark</source>
       <translation>Una transformació per aplicar a la marca de nivell</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="547"/>
+      <location filename="../../ArchBuildingPart.py" line="568"/>
       <source>If true, show the level</source>
       <translation>Si és cert, mostra el nivell</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="556"/>
+      <location filename="../../ArchBuildingPart.py" line="577"/>
       <source>If true, show the unit on the level tag</source>
       <translation>Si és cert, mostra la unitat a l'etiqueta de nivell</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="566"/>
+      <location filename="../../ArchBuildingPart.py" line="587"/>
       <source>If true, display offset will affect the origin mark too</source>
       <translation>Si és cert, el desplaçament de la visualització afectarà també la marca d'origen</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="574"/>
+      <location filename="../../ArchBuildingPart.py" line="595"/>
       <source>If true, the object's label is displayed</source>
       <translation>Si és cert, es visualitza l'etiqueta de l'objecte</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="583"/>
+      <location filename="../../ArchBuildingPart.py" line="604"/>
       <source>The font to be used for texts</source>
       <translation>La tipografia a utilitzar pels texts</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="592"/>
+      <location filename="../../ArchBuildingPart.py" line="613"/>
       <source>The font size of texts</source>
       <translation>La mida de la tipografia dels texts</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="603"/>
+      <location filename="../../ArchBuildingPart.py" line="624"/>
       <source>The individual face colors</source>
       <translation>Els colors de la cara individual</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="616"/>
+      <location filename="../../ArchBuildingPart.py" line="637"/>
       <source>If true, when activated, the working plane will automatically adapt to this level</source>
       <translation>Si és cert, quan s'activi, el pla de treball s'adaptarà automàticament a aquest nivell</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="627"/>
+      <location filename="../../ArchBuildingPart.py" line="648"/>
       <source>If set to True, the working plane will be kept on Auto mode</source>
       <translation>Si s'estableix a Cert, el pla de treball es mantindrà en mode Automàtic</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="637"/>
+      <location filename="../../ArchBuildingPart.py" line="658"/>
       <source>Camera position data associated with this object</source>
       <translation>Dades de posició de la càmera associades amb aquest objecte</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="649"/>
+      <location filename="../../ArchBuildingPart.py" line="670"/>
       <source>If set, the view stored in this object will be restored on double-click</source>
       <translation>Si s'estableix, la vista emmagatzemada en aquest objecte es restaurarà fent doble clic</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="659"/>
+      <location filename="../../ArchBuildingPart.py" line="680"/>
       <source>If True, double-clicking this object in the tree activates it</source>
       <translation>Si és cert, un doble clic sobre aquest objecte a l’arbre, l'activa</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="673"/>
+      <location filename="../../ArchBuildingPart.py" line="694"/>
       <source>If this is enabled, the OpenInventor representation of this object will be saved in the FreeCAD file, allowing to reference it in other files in lightweight mode.</source>
       <translation>Si està activada, la representació de l’OpenInventor d’aquest objecte es desarà en el fitxer FreeCAD, i permetrà fer-ne referència en altres fitxers en mode lleuger.</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="684"/>
+      <location filename="../../ArchBuildingPart.py" line="705"/>
       <source>A slot to save the OpenInventor representation of this object, if enabled</source>
       <translation>Un espai per a guardar la representació de l’OpenInventor d’aquest objecte, si està habilitada</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="698"/>
+      <location filename="../../ArchBuildingPart.py" line="719"/>
       <source>If true, show the objects contained in this Building Part will adopt these line, color and transparency settings</source>
       <translation>Si és Cert, mostra els objectes continguts en aquesta part de la construcció que adoptaran aquestes preferències de línia, color i transparència</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="706"/>
+      <location filename="../../ArchBuildingPart.py" line="727"/>
       <source>The line width of child objects</source>
       <translation>L'amplada de línia dels objectes fills</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="715"/>
+      <location filename="../../ArchBuildingPart.py" line="736"/>
       <source>The line color of child objects</source>
       <translation>El color de línia dels objectes fills</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="724"/>
+      <location filename="../../ArchBuildingPart.py" line="745"/>
       <source>The shape appearance of child objects</source>
       <translation>L'aparença de la forma dels objectes fills</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="733"/>
+      <location filename="../../ArchBuildingPart.py" line="755"/>
       <source>The transparency of child objects</source>
       <translation>La transparència dels objectes fills</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="744"/>
+      <location filename="../../ArchBuildingPart.py" line="766"/>
       <source>Cut the view above this level</source>
       <translation>Retalla la vista per damunt d’aquest nivell</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="754"/>
+      <location filename="../../ArchBuildingPart.py" line="776"/>
       <source>The distance between the level plane and the cut line</source>
       <translation>Distància entre el pla de nivell i la línia de tall</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="763"/>
+      <location filename="../../ArchBuildingPart.py" line="785"/>
       <source>Turn cutting on when activating this level</source>
       <translation>Activa el tall quan s'activi aquest nivell</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="776"/>
+      <location filename="../../ArchBuildingPart.py" line="798"/>
       <source>The capture box for newly created objects expressed as [XMin,YMin,ZMin,XMax,YMax,ZMax]</source>
       <translation>La caixa de captura dels objectes acabats de crear expressats com a [XMin,YMin,ZMin,XMax,YMax,ZMax]</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="784"/>
+      <location filename="../../ArchBuildingPart.py" line="806"/>
       <source>Turns auto group box on/off</source>
       <translation>Habilita/Deshabilita la caixa de grup automàtica</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="792"/>
+      <location filename="../../ArchBuildingPart.py" line="814"/>
       <source>Automatically set size from contents</source>
       <translation>Estableix automàticament la mida a partir dels continguts</translation>
     </message>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="800"/>
+      <location filename="../../ArchBuildingPart.py" line="822"/>
       <source>A margin to use when autosize is turned on</source>
       <translation>Marge a utilitzar quan la mida automàtica està habilitada</translation>
     </message>
@@ -6491,24 +6472,24 @@ S'avorta la creació de la construcció.</translation>
     </message>
     <message>
       <location filename="../../ArchSite.py" line="656"/>
-      <location filename="../../ArchComponent.py" line="238"/>
+      <location filename="../../ArchComponent.py" line="240"/>
       <source>Other shapes that are appended to this object</source>
       <translation>Altres formes que s'afegeixen a aquest objecte</translation>
     </message>
     <message>
       <location filename="../../ArchSite.py" line="666"/>
-      <location filename="../../ArchComponent.py" line="248"/>
+      <location filename="../../ArchComponent.py" line="250"/>
       <source>Other shapes that are subtracted from this object</source>
       <translation>Altres formes que són extretes d'aquest objecte</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="275"/>
+      <location filename="../../ArchComponent.py" line="277"/>
       <source>An optional standard (OmniClass, etc…) code for this component</source>
       <translation>Un codi estàndard opcional (OmniClass, etc.) per a aquest component</translation>
     </message>
     <message>
       <location filename="../../ArchSite.py" line="676"/>
-      <location filename="../../ArchComponent.py" line="331"/>
+      <location filename="../../ArchComponent.py" line="333"/>
       <source>The area of the projection of this object onto the XY plane</source>
       <translation>L'àrea de la projecció d'aquest objecte en el pla XY</translation>
     </message>
@@ -6543,8 +6524,8 @@ S'avorta la creació de la construcció.</translation>
       <translation>Un desplaçament opcional entre l'origen del model (0,0,0) i el punt indicat per les coordenades geogràfiques</translation>
     </message>
     <message>
-      <location filename="../../ArchIFC.py" line="87"/>
       <location filename="../../ArchSite.py" line="744"/>
+      <location filename="../../ArchIFC.py" line="87"/>
       <source>The type of this object</source>
       <translation>El tipus d'aquest objecte</translation>
     </message>
@@ -6639,17 +6620,17 @@ S'avorta la creació de la construcció.</translation>
       <translation>Mostra etiquetes de text per a hores clau al recorregut solar</translation>
     </message>
     <message>
-      <location filename="../../ArchSite.py" line="2038"/>
+      <location filename="../../ArchSite.py" line="2044"/>
       <source>The altitude of the sun above the horizon</source>
       <translation>L'altitud del sol sobre l'horitzó</translation>
     </message>
     <message>
-      <location filename="../../ArchSite.py" line="2048"/>
+      <location filename="../../ArchSite.py" line="2054"/>
       <source>The compass direction of the sun (0° is North)</source>
       <translation>La direcció de brúixola del sol (0° és nord)</translation>
     </message>
     <message>
-      <location filename="../../ArchSite.py" line="2056"/>
+      <location filename="../../ArchSite.py" line="2062"/>
       <source>The date and time for this sun position</source>
       <translation>La data i l'hora d'aquesta posició solar</translation>
     </message>
@@ -6729,12 +6710,12 @@ S'avorta la creació de la construcció.</translation>
       <translation>Unir objectes del mateix material</translation>
     </message>
     <message>
-      <location filename="../../ArchReference.py" line="584"/>
+      <location filename="../../ArchReference.py" line="606"/>
       <source>The latest time stamp of the linked file</source>
       <translation>L'última marca de temps del fitxer enllaçat</translation>
     </message>
     <message>
-      <location filename="../../ArchReference.py" line="590"/>
+      <location filename="../../ArchReference.py" line="612"/>
       <source>If true, the colors from the linked file will be kept updated</source>
       <translation>Si és cert, els colors de l'arxiu enllaçat es mantindran actualitzats</translation>
     </message>
@@ -6779,8 +6760,8 @@ S'avorta la creació de la construcció.</translation>
       <translation>Si és cert, la geometria es fusiona, en cas contrari un compost</translation>
     </message>
     <message>
-      <location filename="../../ArchSketchObject.py" line="52"/>
       <location filename="../../ArchWindow.py" line="144"/>
+      <location filename="../../ArchSketchObject.py" line="54"/>
       <source>The objects that host this window</source>
       <translation>Els objectes que acull aquesta finestra</translation>
     </message>
@@ -6808,11 +6789,6 @@ S'avorta la creació de la construcció.</translation>
       <location filename="../../ArchWindow.py" line="191"/>
       <source>The height of this window</source>
       <translation>L'alçada d'aquesta finestra</translation>
-    </message>
-    <message>
-      <location filename="../../ArchWindow.py" line="332"/>
-      <source>The height of this window's sill</source>
-      <translation>L'alçada d'aquest suport de finestra</translation>
     </message>
     <message>
       <location filename="../../ArchWindow.py" line="199"/>
@@ -6875,7 +6851,7 @@ S'avorta la creació de la construcció.</translation>
       <translation>Mostra els símbols d'obertura de l'elevació, si està disponible</translation>
     </message>
     <message>
-      <location filename="../../ArchWindow.py" line="1464"/>
+      <location filename="../../ArchWindow.py" line="1380"/>
       <source>The number of the wire that defines the hole. A value of 0 means automatic</source>
       <translation>El nombre de filferros que defineix el forat. Un valor de 0 significa automàtic</translation>
     </message>
@@ -7127,7 +7103,7 @@ S'avorta la creació de la construcció.</translation>
     </message>
     <message>
       <location filename="../../ArchStairs.py" line="462"/>
-      <location filename="../../ArchStairs.py" line="1738"/>
+      <location filename="../../ArchStairs.py" line="1753"/>
       <source>The overlap of the stringers above the bottom of the treads</source>
       <translation>La superposició dels travessers d'escala sobre la part inferior de les esteses</translation>
     </message>
@@ -7192,43 +7168,43 @@ S'avorta la creació de la construcció.</translation>
       <translation>Si és cert, la tanca s'acolorirà com el pal i la secció originals.</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="190"/>
-      <location filename="../../ArchMaterial.py" line="718"/>
+      <location filename="../../ArchMaterial.py" line="200"/>
+      <location filename="../../ArchMaterial.py" line="729"/>
       <source>A description for this material</source>
       <translation>Una descripció d'aquest material</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="208"/>
+      <location filename="../../ArchMaterial.py" line="218"/>
       <source>A URL where to find information about this material</source>
       <translation>La URL on trobar informació sobre aquest material</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="216"/>
+      <location filename="../../ArchMaterial.py" line="226"/>
       <source>The transparency value of this material</source>
       <translation>El valor de transparència d'aquest material</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="224"/>
+      <location filename="../../ArchMaterial.py" line="234"/>
       <source>The color of this material</source>
       <translation>El color d'aquest material</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="232"/>
+      <location filename="../../ArchMaterial.py" line="242"/>
       <source>The color of this material when cut</source>
       <translation>El color d'aquest material quan s'escapça</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="725"/>
+      <location filename="../../ArchMaterial.py" line="736"/>
       <source>The list of layer names</source>
       <translation>La llista dels noms de capa</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="732"/>
+      <location filename="../../ArchMaterial.py" line="743"/>
       <source>The list of layer materials</source>
       <translation>La llista dels materials de capa</translation>
     </message>
     <message>
-      <location filename="../../ArchMaterial.py" line="739"/>
+      <location filename="../../ArchMaterial.py" line="750"/>
       <source>The list of layer thicknesses</source>
       <translation>La llista dels gruixos de capa</translation>
     </message>
@@ -7756,8 +7732,8 @@ S'avorta la creació de la construcció.</translation>
       <translation>Si és cert, s’afegeixen línies addicionals amb cada objecte individual als resultats</translation>
     </message>
     <message>
+      <location filename="../../ArchSectionPlane.py" line="950"/>
       <location filename="../../ArchFloor.py" line="253"/>
-      <location filename="../../ArchSectionPlane.py" line="946"/>
       <source>The placement of this object</source>
       <translation>El posicionament d'aquest objecte</translation>
     </message>
@@ -7847,52 +7823,52 @@ S'avorta la creació de la construcció.</translation>
       <translation>Una transformació que s'aplica a cada etiqueta</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="222"/>
+      <location filename="../../ArchComponent.py" line="224"/>
       <source>The base object this component is built upon</source>
       <translation>L'objecte base sobre el qual es construeix aquest component</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="230"/>
+      <location filename="../../ArchComponent.py" line="232"/>
       <source>The object this component is cloning</source>
       <translation>L'objecte que aquest component clona</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="283"/>
+      <location filename="../../ArchComponent.py" line="285"/>
       <source>A material for this object</source>
       <translation>Un material per a aquest objecte</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="299"/>
+      <location filename="../../ArchComponent.py" line="301"/>
       <source>Specifies if moving this object moves its base instead</source>
       <translation>Especifica si en moure aquest objecte, es mou la seva base en el seu lloc</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="311"/>
+      <location filename="../../ArchComponent.py" line="313"/>
       <source>Specifies if this object must move together when its host is moved</source>
       <translation>Especifica si aquest objecte s'ha de moure juntament amb el seu amfitrió, quan aquest es mou</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="320"/>
+      <location filename="../../ArchComponent.py" line="322"/>
       <source>The area of all vertical faces of this object</source>
       <translation>L'àrea de totes les cares verticals d'aquest objecte</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="340"/>
+      <location filename="../../ArchComponent.py" line="342"/>
       <source>The perimeter length of the horizontal area</source>
       <translation>La longitud del perímetre de l'àrea horitzontal</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="351"/>
+      <location filename="../../ArchComponent.py" line="353"/>
       <source>An optional higher-resolution mesh or shape for this object</source>
       <translation>Una malla o forma opcional en alta resolució per a aquest objecte</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="362"/>
+      <location filename="../../ArchComponent.py" line="364"/>
       <source>An optional axis or axis system on which this object should be duplicated</source>
       <translation>Un eix o sistema d'eixos opcional sobre el qual s'ha de duplicar aquest objecte</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="1534"/>
+      <location filename="../../ArchComponent.py" line="1575"/>
       <source>Use the material color as this object's shape color, if available</source>
       <translation>Utilitza el color del material com a color de la forma d’aquest objecte, si està disponible</translation>
     </message>
@@ -7972,80 +7948,80 @@ S'avorta la creació de la construcció.</translation>
       <translation>Forma de l'armadura</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="965"/>
+      <location filename="../../ArchSectionPlane.py" line="969"/>
       <source>The objects that must be considered by this section plane. Empty means the whole document.</source>
       <translation>Els objectes que han de ser considerats amb aquest pla de secció. Buit significa tot el document.</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="976"/>
+      <location filename="../../ArchSectionPlane.py" line="980"/>
       <source>If false, non-solids will be cut too, with possible wrong results.</source>
       <translation>Si és fals, els objectes no sòlids també es tallaran, amb possibles resultats erronis.</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="988"/>
+      <location filename="../../ArchSectionPlane.py" line="992"/>
       <source>If True, resulting views will be clipped to the section plane area.</source>
       <translation>Si és cert, les vistes que en resulten es retallaran en la zona del pla de la secció.</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="999"/>
+      <location filename="../../ArchSectionPlane.py" line="1003"/>
       <source>If true, the color of the objects material will be used to fill cut areas.</source>
       <translation>Si és cert, el color del material dels objectes s'utilitzarà per a emplenar les zones retallades.</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1011"/>
+      <location filename="../../ArchSectionPlane.py" line="1015"/>
       <source>Geometry further than this value will be cut off. Keep zero for unlimited.</source>
       <translation>La geometria més enllà d'aquest valor es tallarà. Mantingueu zero per a il·limitat.</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1084"/>
+      <location filename="../../ArchSectionPlane.py" line="1088"/>
       <source>The display length of this section plane</source>
       <translation>La longitud que es visualitza del pla de secció</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1096"/>
+      <location filename="../../ArchSectionPlane.py" line="1100"/>
       <source>The display height of this section plane</source>
       <translation>L'alçada que es visualitza del pla de secció</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1108"/>
+      <location filename="../../ArchSectionPlane.py" line="1112"/>
       <source>The size of the arrows of this section plane</source>
       <translation>La mida de les fletxes del pla de secció</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1117"/>
+      <location filename="../../ArchSectionPlane.py" line="1121"/>
       <source>The transparency of this object</source>
       <translation>La transparència d'aquest objecte</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1135"/>
-      <location filename="../../ArchSectionPlane.py" line="1152"/>
+      <location filename="../../ArchSectionPlane.py" line="1139"/>
+      <location filename="../../ArchSectionPlane.py" line="1156"/>
       <source>Show the cut in the 3D view</source>
       <translation>Mostra el tall en la vista 3D</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1143"/>
+      <location filename="../../ArchSectionPlane.py" line="1147"/>
       <source>The color of this object</source>
       <translation>El color d'aquest objecte</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1163"/>
+      <location filename="../../ArchSectionPlane.py" line="1167"/>
       <source>The distance between the cut plane and the actual view cut (keep this a very small value but not zero)</source>
       <translation>La distancia entre el pla de tall i la vista actual de tall (mantenir aquest valor molt baix però no a zero)</translation>
     </message>
     <message>
-      <location filename="../../ArchSectionPlane.py" line="1172"/>
+      <location filename="../../ArchSectionPlane.py" line="1176"/>
       <source>Show the label in the 3D view</source>
       <translation>Mostra l'etiqueta a la vista 3D</translation>
     </message>
     <message>
       <location filename="../../ArchSpace.py" line="579"/>
-      <location filename="../../ArchSectionPlane.py" line="1180"/>
+      <location filename="../../ArchSectionPlane.py" line="1184"/>
       <source>The name of the font</source>
       <translation>El nom de la tipografia</translation>
     </message>
     <message>
       <location filename="../../ArchSpace.py" line="597"/>
-      <location filename="../../ArchSectionPlane.py" line="1189"/>
+      <location filename="../../ArchSectionPlane.py" line="1193"/>
       <source>The size of the text font</source>
       <translation>La mida de la tipografia del text</translation>
     </message>
@@ -8265,8 +8241,8 @@ S'avorta la creació de la construcció.</translation>
       <translation>Seleccioneu el conjunt de propietats definit per l'usuari per utilitzar-lo en la creació de formes variants, amb el mateix ArchSketch. </translation>
     </message>
     <message>
-      <location filename="../../ArchWall.py" line="381"/>
       <location filename="../../ArchStructure.py" line="962"/>
+      <location filename="../../ArchWall.py" line="381"/>
       <source>Use Base ArchSketch (if used) data (e.g. widths, aligns, offsets) instead of Wall's properties</source>
       <translation>Utilitzeu dades de Base ArchSketch (si s'utilitza) (p. ex., amplades, alineacions, desplaçaments) en lloc de les propietats de mur</translation>
     </message>
@@ -8274,12 +8250,12 @@ S'avorta la creació de la construcció.</translation>
   <context>
     <name>Arch_StructureTools</name>
     <message>
-      <location filename="../../ArchStructure.py" line="2128"/>
+      <location filename="../../ArchStructure.py" line="2138"/>
       <source>Structure Tools</source>
       <translation>Eines d'estructura</translation>
     </message>
     <message>
-      <location filename="../../ArchStructure.py" line="2129"/>
+      <location filename="../../ArchStructure.py" line="2139"/>
       <source>Structure tools</source>
       <translation>Eines d'estructura</translation>
     </message>
@@ -8300,7 +8276,7 @@ S'avorta la creació de la construcció.</translation>
   <context>
     <name>Draft</name>
     <message>
-      <location filename="../../ArchBuildingPart.py" line="1246"/>
+      <location filename="../../ArchBuildingPart.py" line="1243"/>
       <source>Writing camera position</source>
       <translation>Escrivint la posició de la càmera</translation>
     </message>
@@ -9049,9 +9025,9 @@ S'avorta la creació de la construcció.</translation>
   <context>
     <name>Command</name>
     <message>
-      <location filename="../../ArchIFCView.py" line="73"/>
-      <location filename="../../ArchSite.py" line="1308"/>
       <location filename="../../ArchAxis.py" line="798"/>
+      <location filename="../../ArchSite.py" line="1314"/>
+      <location filename="../../ArchIFCView.py" line="73"/>
       <source>Transform</source>
       <translation>Transforma</translation>
     </message>
@@ -9234,19 +9210,19 @@ CTRL+/ per a alternar entre mode automàtic i manual</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimIfcElements.py" line="91"/>
-      <location filename="../../bimcommands/BimIfcElements.py" line="458"/>
+      <location filename="../../bimcommands/BimIfcElements.py" line="460"/>
       <source>Create new material</source>
       <translation>Crea un material nou</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimIfcElements.py" line="92"/>
-      <location filename="../../bimcommands/BimIfcElements.py" line="459"/>
+      <location filename="../../bimcommands/BimIfcElements.py" line="461"/>
       <source>Create new multi-material</source>
       <translation>Crea material múltiple nou</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimIfcQuantities.py" line="247"/>
       <location filename="../../bimcommands/BimIfcElements.py" line="139"/>
+      <location filename="../../bimcommands/BimIfcQuantities.py" line="247"/>
       <location filename="../../bimcommands/BimIfcProperties.py" line="206"/>
       <source>Label</source>
       <translation>Etiqueta</translation>
@@ -9516,117 +9492,117 @@ CTRL+/ per a alternar entre mode automàtic i manual</translation>
       <translation>Crea una línia de referència</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimLibrary.py" line="189"/>
-      <location filename="../../bimcommands/BimLibrary.py" line="192"/>
-      <location filename="../../bimcommands/BimLibrary.py" line="935"/>
-      <location filename="../../bimcommands/BimLibrary.py" line="939"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="187"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="190"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="921"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="925"/>
       <source>Preview</source>
       <translation>Previsualització</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimLibrary.py" line="195"/>
-      <location filename="../../bimcommands/BimLibrary.py" line="925"/>
-      <location filename="../../bimcommands/BimLibrary.py" line="928"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="193"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="911"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="914"/>
       <source>Options</source>
       <translation>Opcions</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimLibrary.py" line="349"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="347"/>
       <source>It is not possible to link because the main document is closed.</source>
       <translation>No és possible fer l'enllaç perquè el document principal està tancat.</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimLibrary.py" line="309"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="307"/>
       <source>Save the working file before linking.</source>
       <translation>Deseu el fitxer de treball abans d'enllaçar.</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimLibrary.py" line="502"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="500"/>
       <source>No structure in cache. Refresh required.</source>
       <translation>No hi ha estructura a la memòria cau. Cal actualitzar.</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimLibrary.py" line="570"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="562"/>
       <source>It is not possible to insert this object because the document has been closed.</source>
       <translation>No és possible inserir aquest objecte perquè s'ha tancat el document.</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimLibrary.py" line="616"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="608"/>
       <source>Error: Unable to import SAT files - InventorLoader or CadExchanger addon must be installed</source>
       <translation>Error: No s'han pogut importar els fitxers SAT - s'ha d'instal·lar el complement InventorLoader o CadExchanger</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimLibrary.py" line="642"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="634"/>
       <source>Error: Unable to download</source>
       <translation>Error: No s'ha pogut baixar</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimLibrary.py" line="683"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="675"/>
       <source>Insertion point</source>
       <translation>Punt d'inserció</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimLibrary.py" line="694"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="686"/>
       <source>Origin</source>
       <translation>Origen</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimLibrary.py" line="695"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="687"/>
       <source>Top left</source>
       <translation>Superior esquerra</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimLibrary.py" line="696"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="688"/>
       <source>Top center</source>
       <translation>A dalt al centre</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimLibrary.py" line="697"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="689"/>
       <source>Top right</source>
       <translation>Superior dreta</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimLibrary.py" line="698"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="690"/>
       <source>Middle left</source>
       <translation>Al mig a l'esquerra</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimLibrary.py" line="699"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="691"/>
       <source>Middle center</source>
       <translation>Al mig al centre</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimLibrary.py" line="700"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="692"/>
       <source>Middle right</source>
       <translation>Al mig a la dreta</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimLibrary.py" line="701"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="693"/>
       <source>Bottom left</source>
       <translation>Inferior esquerra</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimLibrary.py" line="702"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="694"/>
       <source>Bottom center</source>
       <translation>A baix al centre</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimLibrary.py" line="703"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="695"/>
       <source>Bottom right</source>
       <translation>Inferior dreta</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimLibrary.py" line="809"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="801"/>
       <source>Could not fetch library contents</source>
       <translation>No s'ha pogut obtenir els continguts de la biblioteca</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimLibrary.py" line="813"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="805"/>
       <source>No results fetched from online library</source>
       <translation>No s'ha pogut obtenir cap resultat de la biblioteca en línia</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimLibrary.py" line="871"/>
+      <location filename="../../bimcommands/BimLibrary.py" line="863"/>
       <source>Warning, this can take several minutes!</source>
       <translation>Advertència, pot durar uns minuts!</translation>
     </message>
@@ -9676,8 +9652,8 @@ CTRL+/ per a alternar entre mode automàtic i manual</translation>
       <translation>Suprimeix els no utilitzats</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimViews.py" line="96"/>
       <location filename="../../bimcommands/BimMaterial.py" line="175"/>
+      <location filename="../../bimcommands/BimViews.py" line="96"/>
       <source>Rename</source>
       <translation>Reanomena</translation>
     </message>
@@ -9692,8 +9668,8 @@ CTRL+/ per a alternar entre mode automàtic i manual</translation>
       <translation>Fusiona amb…</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimViews.py" line="92"/>
       <location filename="../../bimcommands/BimMaterial.py" line="181"/>
+      <location filename="../../bimcommands/BimViews.py" line="92"/>
       <source>Delete</source>
       <translation>Elimina</translation>
     </message>
@@ -9880,78 +9856,78 @@ CTRL+/ per a alternar entre mode automàtic i manual</translation>
       <translation>Consell: Els resultats es veuen millor en mode filferro (menú Vista -&gt; Estil de dibuix -&gt; Model de filferro)</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimProjectManager.py" line="288"/>
+      <location filename="../../bimcommands/BimProjectManager.py" line="295"/>
       <source>Building Layout</source>
       <translation>Disposició de construcció</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimProjectManager.py" line="314"/>
+      <location filename="../../bimcommands/BimProjectManager.py" line="321"/>
       <source>Building Outline</source>
       <translation>Contorn de construcció</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimProjectManager.py" line="333"/>
+      <location filename="../../bimcommands/BimProjectManager.py" line="340"/>
       <source>Building Label</source>
       <translation>Etiqueta de construcció</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimProjectManager.py" line="343"/>
+      <location filename="../../bimcommands/BimProjectManager.py" line="350"/>
       <source>Vertical Axes</source>
       <translation>Eixos verticals</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimProjectManager.py" line="354"/>
+      <location filename="../../bimcommands/BimProjectManager.py" line="361"/>
       <source>Horizontal Axes</source>
       <translation>Eixos horitzontals</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimProjectManager.py" line="364"/>
+      <location filename="../../bimcommands/BimProjectManager.py" line="371"/>
       <source>Axes</source>
       <translation>Eixos</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimProjectManager.py" line="378"/>
+      <location filename="../../bimcommands/BimProjectManager.py" line="385"/>
       <source>Level</source>
       <translation>Nivell</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimProjectManager.py" line="439"/>
+      <location filename="../../bimcommands/BimProjectManager.py" line="446"/>
       <source>Save Preset</source>
       <translation>Desa preselecció</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimProjectManager.py" line="440"/>
+      <location filename="../../bimcommands/BimProjectManager.py" line="447"/>
       <source>Preset name</source>
       <translation>Nom del valor predefinit</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimProjectManager.py" line="489"/>
+      <location filename="../../bimcommands/BimProjectManager.py" line="496"/>
       <source>User preset</source>
       <translation>Valor predefinit d'usuari</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimProjectManager.py" line="779"/>
+      <location filename="../../bimcommands/BimProjectManager.py" line="786"/>
       <source>Template successfully loaded into the current document</source>
       <translation>Plantilla carregada correctament al document actual</translation>
     </message>
     <message>
       <location filename="../../nativeifc/ifc_viewproviders.py" line="156"/>
-      <location filename="../../bimcommands/BimProjectManager.py" line="424"/>
+      <location filename="../../bimcommands/BimProjectManager.py" line="431"/>
       <source>New Group</source>
       <translation>Grup nou</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimProjectManager.py" line="643"/>
+      <location filename="../../bimcommands/BimProjectManager.py" line="650"/>
       <source>Save template file</source>
       <translation>Desar fitxer de plantilla</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimProjectManager.py" line="652"/>
+      <location filename="../../bimcommands/BimProjectManager.py" line="659"/>
       <source>Template saved successfully</source>
       <translation>La plantilla s'ha desat correctament</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimProjectManager.py" line="665"/>
+      <location filename="../../bimcommands/BimProjectManager.py" line="672"/>
       <source>Open template file</source>
       <translation>Obre fitxer de plantilla</translation>
     </message>
@@ -10595,8 +10571,8 @@ Comproveu la instal·lació de FreeCAD o proporcioneu una plantilla personalitza
       <translation>Esborra de la paperera tots els objectes que no siguin utilitzats per cap altre</translation>
     </message>
     <message>
-      <location filename="../../bimcommands/BimEmptyTrash.py" line="38"/>
       <location filename="../../bimcommands/BimTrash.py" line="78"/>
+      <location filename="../../bimcommands/BimEmptyTrash.py" line="38"/>
       <source>Empty Trash</source>
       <translation>Buida la paperera</translation>
     </message>
@@ -10846,8 +10822,8 @@ Comproveu la instal·lació de FreeCAD o proporcioneu una plantilla personalitza
     <name>BIM_Project</name>
     <message>
       <location filename="../../bimcommands/BimProject.py" line="38"/>
-      <source>Project</source>
-      <translation>Projecte</translation>
+      <source>IFC Project</source>
+      <translation>Projecte IFC</translation>
     </message>
     <message>
       <location filename="../../bimcommands/BimProject.py" line="39"/>
@@ -11098,8 +11074,8 @@ Comproveu la instal·lació de FreeCAD o proporcioneu una plantilla personalitza
     </message>
     <message>
       <location filename="../../nativeifc/ifc_commands.py" line="143"/>
-      <source>Create IFC Project</source>
-      <translation>Crea un projecte IFC</translation>
+      <source>Convert to IFC Project</source>
+      <translation>Converteix a projecte IFC</translation>
     </message>
   </context>
   <context>
@@ -11406,6 +11382,11 @@ Comproveu la instal·lació de FreeCAD o proporcioneu una plantilla personalitza
       <translation>Autor predeterminat per als fitxers nous</translation>
     </message>
     <message>
+      <location filename="../ui/dialogSetup.ui" line="636"/>
+      <source>&lt;b&gt;IfcOpenShell&lt;/b&gt; is missing on your system. IfcOpenShell is needed to import or export IFC files to/from FreeCAD. Check &lt;a href="https://www.freecad.org/wiki/Arch_IFC"&gt;this wiki page&lt;/a&gt; to know more, or &lt;a href="#install"&gt;download and install it&lt;/a&gt; directly.&lt;/p&gt;</source>
+      <translation>Falta &lt;b&gt;IfcOpenShell&lt;/b&gt; al vostre sistema. IfcOpenShell és necessari per importar o exportar fitxers IFC a/des de FreeCAD. Consulteu &lt;a href="https://www.freecad.org/wiki/Arch_IFC"&gt;aquesta pàgina wiki&lt;/a&gt; per obtenir més informació, o bé &lt;a href="#install"&gt;baixeu-la i instal·leu-la&lt;/a&gt; directament.&lt;/p&gt;</translation>
+    </message>
+    <message>
       <location filename="../ui/dialogSetup.ui" line="176"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;How many small squares between each main line of the grid. Location in preferences: &lt;span style=" font-weight:600;"&gt;Draft &amp;gt; Grid and snapping &amp;gt; Main line every&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
       <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Quants quadrats petits hi ha entre línies principals de la quadrícula. Ubicat a preferències: &lt;span style=" font-weight:600;"&gt;Esbós &amp;gt; Quadrícula i ajustament &amp;gt; Línia principal cada&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
@@ -11526,11 +11507,6 @@ Comproveu la instal·lació de FreeCAD o proporcioneu una plantilla personalitza
       <location filename="../ui/dialogSetup.ui" line="267"/>
       <source>Geometry color</source>
       <translation>Color de la geometria</translation>
-    </message>
-    <message>
-      <location filename="../ui/dialogSetup.ui" line="636"/>
-      <source>&lt;b&gt;IfcOpenShell&lt;/b&gt; is missing on your system. IfcOpenShell is needed to import or export IFC files to/from FreeCAD. Check &lt;a href="https://www.freecadweb.org/wiki/Arch_IFC"&gt;this wiki page&lt;/a&gt; to know more, or &lt;a href="#install"&gt;download and install it&lt;/a&gt; directly.&lt;/p&gt;</source>
-      <translation>Falta &lt;b&gt;IfcOpenShell&lt;/b&gt; al vostre sistema. IfcOpenShell és necessari per importar o exportar fitxers IFC a/des de FreeCAD. Consulteu &lt;a href="https://www.freecadweb.org/wiki/Arch_IFC"&gt;aquesta pàgina wiki&lt;/a&gt; per obtenir més informació, o bé &lt;a href="#install"&gt;baixeu-la i instal·leu-la&lt;/a&gt; directament.&lt;/p&gt;</translation>
     </message>
   </context>
   <context>

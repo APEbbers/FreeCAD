@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2009, 2010 Yorik van Havre <yorik@uncreated.net>        *
 # *   Copyright (c) 2009, 2010 Ken Cline <cline@frii.com>                   *
@@ -24,6 +26,7 @@
 
 This includes orthogonal arrays, polar arrays, and circular arrays.
 """
+
 ## @package make_array
 # \ingroup draftmake
 # \brief Provides functions to create Array objects.

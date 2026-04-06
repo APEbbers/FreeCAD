@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   (c) 2009, 2010 Yorik van Havre <yorik@uncreated.net>                  *
 # *   (c) 2009, 2010 Ken Cline <cline@frii.com>                             *
@@ -27,6 +29,7 @@
 Upgrades simple 2D objects to more complex objects until it reaches
 Draft scripted objects. For example, an edge to a wire, and to a Draft Line.
 """
+
 ## @package gui_upgrade
 # \ingroup draftguitools
 # \brief Provides GUI tools to upgrade objects.

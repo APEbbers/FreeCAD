@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2019, 2020 Carlo Pavan <carlopav@gmail.com>             *
 # *                                                                         *
@@ -19,6 +21,7 @@
 # *                                                                         *
 # ***************************************************************************
 """Provides support functions to edit Arch objects."""
+
 ## @package gui_edit_arch_objects
 # \ingroup draftguitools
 # \brief Provides support functions to edit Arch objects.

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2009, 2010 Yorik van Havre <yorik@uncreated.net>        *
 # *   Copyright (c) 2009, 2010 Ken Cline <cline@frii.com>                   *
@@ -21,6 +23,7 @@
 # *                                                                         *
 # ***************************************************************************
 """Provides functions to split wires into separate wire objects."""
+
 ## @package split
 # \ingroup draftfunctions
 # \brief Provides functions to split wires into separate wire objects.
@@ -56,15 +59,17 @@ splitClosedWire = split_closed_wire
 
 
 def split_open_wire(wire, newPoint, edgeIndex):
+    edge = wire.getSubObject("Edge" + str(edgeIndex))
+    splitPoint = wire.Placement.inverse().multVec(edge.Curve.projectPoint(newPoint))
+    if splitPoint.isEqual(wire.Points[0], 1e-7) or splitPoint.isEqual(wire.Points[-1], 1e-7):
+        return None
     new = make_copy.make_copy(wire)
     wire1Points = []
     wire2Points = []
     for index, point in enumerate(wire.Points):
         if index == edgeIndex:
-            edge = wire.getSubObject("Edge" + str(edgeIndex))
-            newPoint = wire.Placement.inverse().multVec(edge.Curve.projectPoint(newPoint))
-            wire1Points.append(newPoint)
-            wire2Points.append(newPoint)
+            wire1Points.append(splitPoint)
+            wire2Points.append(splitPoint)
             wire2Points.append(point)
         elif index < edgeIndex:
             wire1Points.append(point)

@@ -21,8 +21,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef FEM_CONSTRAINTFORCE_H
-#define FEM_CONSTRAINTFORCE_H
+#pragma once
 
 #include "FemConstraint.h"
 
@@ -55,9 +54,11 @@ public:
     }
 
 protected:
-    void handleChangedPropertyType(Base::XMLReader& reader,
-                                   const char* TypeName,
-                                   App::Property* prop) override;
+    void handleChangedPropertyType(
+        Base::XMLReader& reader,
+        const char* TypeName,
+        App::Property* prop
+    ) override;
     void onChanged(const App::Property* prop) override;
 
 private:
@@ -65,6 +66,3 @@ private:
 };
 
 }  // namespace Fem
-
-
-#endif  // FEM_CONSTRAINTFORCE_H

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2022 Abdullah Tahiri <abdullah.tahiri.yo@gmail.com>     *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef SKETCHERGUI_DrawSketchHandlerArcOfParabola_H
-#define SKETCHERGUI_DrawSketchHandlerArcOfParabola_H
+#pragma once
 
 #include <boost/math/special_functions/fpclassify.hpp>
 
@@ -46,6 +47,8 @@ extern GeometryCreationMode geometryCreationMode;  // defined in CommandCreateGe
 
 class DrawSketchHandlerArcOfParabola: public DrawSketchHandler
 {
+    Q_DECLARE_TR_FUNCTIONS(SketcherGui::DrawSketchHandlerArcOfParabola)
+
 public:
     DrawSketchHandlerArcOfParabola()
         : Mode(STATUS_SEEK_First)
@@ -102,8 +105,9 @@ public:
             //                      cos(phi), 0.f);
 
             // This is the angle at cursor point
-            double u = (cos(phi) * (onSketchPos.y - axisPoint.y)
-                        - (onSketchPos.x - axisPoint.x) * sin(phi));
+            double u
+                = (cos(phi) * (onSketchPos.y - axisPoint.y)
+                   - (onSketchPos.x - axisPoint.x) * sin(phi));
 
             for (int i = 15; i >= -15; i--) {
                 double angle = i * u / 15;
@@ -136,13 +140,15 @@ public:
             //                      cos(phi), 0.f);
 
             // This is the angle at starting point
-            double ustartpoint = (cos(phi) * (startingPoint.y - axisPoint.y)
-                                  - (startingPoint.x - axisPoint.x) * sin(phi));
+            double ustartpoint
+                = (cos(phi) * (startingPoint.y - axisPoint.y)
+                   - (startingPoint.x - axisPoint.x) * sin(phi));
 
             double startValue = ustartpoint;
 
-            double u = (cos(phi) * (onSketchPos.y - axisPoint.y)
-                        - (onSketchPos.x - axisPoint.x) * sin(phi));
+            double u
+                = (cos(phi) * (onSketchPos.y - axisPoint.y)
+                   - (onSketchPos.x - axisPoint.x) * sin(phi));
 
 
             arcAngle = u - startValue;
@@ -209,8 +215,9 @@ public:
 
             double phi = atan2(focusPoint.y - axisPoint.y, focusPoint.x - axisPoint.x);
 
-            double ustartpoint = (cos(phi) * (startingPoint.y - axisPoint.y)
-                                  - (startingPoint.x - axisPoint.x) * sin(phi));
+            double ustartpoint
+                = (cos(phi) * (startingPoint.y - axisPoint.y)
+                   - (startingPoint.x - axisPoint.x) * sin(phi));
 
             double startAngle = ustartpoint;
 
@@ -230,41 +237,41 @@ public:
             int currentgeoid = getHighestCurveIndex();
 
             try {
-                Gui::Command::openCommand(
-                    QT_TRANSLATE_NOOP("Command", "Add sketch arc of Parabola"));
+                openCommand(QT_TRANSLATE_NOOP("Command", "Add sketch arc of Parabola"));
 
                 // Add arc of parabola
-                Gui::cmdAppObjectArgs(sketchgui->getObject(),
-                                      "addGeometry(Part.ArcOfParabola"
-                                      "(Part.Parabola(App.Vector(%f,%f,0),App.Vector(%f,%f,0),App."
-                                      "Vector(0,0,1)),%f,%f),%s)",
-                                      focusPoint.x,
-                                      focusPoint.y,
-                                      axisPoint.x,
-                                      axisPoint.y,
-                                      startAngle,
-                                      endAngle,
-                                      constructionModeAsBooleanText());
+                Gui::cmdAppObjectArgs(
+                    sketchgui->getObject(),
+                    "addGeometry(Part.ArcOfParabola"
+                    "(Part.Parabola(App.Vector(%f,%f,0),App.Vector(%f,%f,0),App."
+                    "Vector(0,0,1)),%f,%f),%s)",
+                    focusPoint.x,
+                    focusPoint.y,
+                    axisPoint.x,
+                    axisPoint.y,
+                    startAngle,
+                    endAngle,
+                    constructionModeAsBooleanText()
+                );
 
                 currentgeoid++;
 
-                Gui::cmdAppObjectArgs(sketchgui->getObject(),
-                                      "exposeInternalGeometry(%d)",
-                                      currentgeoid);
+                Gui::cmdAppObjectArgs(sketchgui->getObject(), "exposeInternalGeometry(%d)", currentgeoid);
             }
             catch (const Base::Exception&) {
                 Gui::NotifyError(
                     sketchgui,
                     QT_TRANSLATE_NOOP("Notifications", "Error"),
-                    QT_TRANSLATE_NOOP("Notifications", "Cannot create arc of parabola"));
-                Gui::Command::abortCommand();
+                    QT_TRANSLATE_NOOP("Notifications", "Cannot create arc of parabola")
+                );
+                abortCommand();
 
                 tryAutoRecomputeIfNotSolve(sketchgui->getObject<Sketcher::SketchObject>());
 
                 return false;
             }
 
-            Gui::Command::commitCommand();
+            commitCommand();
 
             // add auto constraints for the focus point
             if (!sugConstr1.empty()) {
@@ -280,26 +287,29 @@ public:
 
             // add suggested constraints for start of arc
             if (!sugConstr3.empty()) {
-                createAutoConstraints(sugConstr3,
-                                      currentgeoid,
-                                      isOriginalArcCCW ? Sketcher::PointPos::start
-                                                       : Sketcher::PointPos::end);
+                createAutoConstraints(
+                    sugConstr3,
+                    currentgeoid,
+                    isOriginalArcCCW ? Sketcher::PointPos::start : Sketcher::PointPos::end
+                );
                 sugConstr3.clear();
             }
 
             // add suggested constraints for start of arc
             if (!sugConstr4.empty()) {
-                createAutoConstraints(sugConstr4,
-                                      currentgeoid,
-                                      isOriginalArcCCW ? Sketcher::PointPos::end
-                                                       : Sketcher::PointPos::start);
+                createAutoConstraints(
+                    sugConstr4,
+                    currentgeoid,
+                    isOriginalArcCCW ? Sketcher::PointPos::end : Sketcher::PointPos::start
+                );
                 sugConstr4.clear();
             }
 
             tryAutoRecomputeIfNotSolve(sketchgui->getObject<Sketcher::SketchObject>());
 
             ParameterGrp::handle hGrp = App::GetApplication().GetParameterGroupByPath(
-                "User parameter:BaseApp/Preferences/Mod/Sketcher");
+                "User parameter:BaseApp/Preferences/Mod/Sketcher"
+            );
             bool continuousMode = hGrp->GetBool("ContinuousCreationMode", true);
             if (continuousMode) {
                 // This code enables the continuous creation mode.
@@ -368,5 +378,3 @@ private:
 };
 
 }  // namespace SketcherGui
-
-#endif  // SKETCHERGUI_DrawSketchHandlerArcOfParabola_H

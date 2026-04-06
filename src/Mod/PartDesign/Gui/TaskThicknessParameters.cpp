@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2015 Stefan Tröger <stefantroeger@gmx.net>              *
  *                                                                         *
@@ -19,7 +21,6 @@
  *   Suite 330, Boston, MA  02111-1307, USA                                *
  *                                                                         *
  ***************************************************************************/
-
 
 
 #include <QAction>
@@ -139,7 +140,8 @@ void TaskThicknessParameters::onSelectionChanged(const Gui::SelectionChanges& ms
         if (selectionMode == refSel) {
             referenceSelected(msg, ui->listWidgetReferences);
         }
-    } else if (msg.Type == Gui::SelectionChanges::ClrSelection) {
+    }
+    else if (msg.Type == Gui::SelectionChanges::ClrSelection) {
         // TODO: the gizmo position should be only recalculated when the feature associated
         // with the gizmo is removed from the list
         setGizmoPositions();
@@ -304,7 +306,7 @@ void TaskThicknessParameters::setGizmoPositions()
 
     Part::TopoShape edge = shapes[0];
     DraggerPlacementProps props = getDraggerPlacementFromEdgeAndFace(edge, faces[0]);
-    props.dir *= thickness->Reversed.getValue()? 1 : -1;
+    props.dir *= thickness->Reversed.getValue() ? 1 : -1;
 
     linearGizmo->Gizmo::setDraggerPlacement(props.position, props.dir);
 }

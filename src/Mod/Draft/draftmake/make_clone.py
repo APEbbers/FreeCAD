@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2009, 2010 Yorik van Havre <yorik@uncreated.net>        *
 # *   Copyright (c) 2009, 2010 Ken Cline <cline@frii.com>                   *
@@ -21,6 +23,7 @@
 # *                                                                         *
 # ***************************************************************************
 """Provides functions to create Clone objects."""
+
 ## @package make_clone
 # \ingroup draftmake
 # \brief Provides functions to create Clone objects.
@@ -34,6 +37,7 @@ from draftutils import utils
 from draftutils import gui_utils
 
 if App.GuiUp:
+    from PySide import QtCore
     from draftviewproviders.view_clone import ViewProviderClone
 
 
@@ -129,7 +133,10 @@ def make_clone(obj, delta=None, forcedraft=False):
         cl.LongName = obj[0].LongName
     if App.GuiUp:
         ViewProviderClone(cl.ViewObject)
-        gui_utils.format_object(cl, obj[0])
+        # Shape of clone may not yet be available (v1.1 regression). We need to delay
+        # `format_object()` as that function requires the correct number of faces.
+        # https://github.com/FreeCAD/FreeCAD/issues/27958
+        QtCore.QTimer.singleShot(0, lambda: gui_utils.format_object(cl, obj[0]))
         gui_utils.select(cl)
     return cl
 

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2009, 2010 Yorik van Havre <yorik@uncreated.net>        *
 # *   Copyright (c) 2009, 2010 Ken Cline <cline@frii.com>                   *
@@ -20,6 +22,7 @@
 # *                                                                         *
 # ***************************************************************************
 """Provides functions to create multipoint Wire objects."""
+
 ## @package make_wire
 # \ingroup draftmake
 # \brief Provides functions to create multipoint Wire objects.

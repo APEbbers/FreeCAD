@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2022 Abdullah Tahiri <abdullah.tahiri.yo@gmail.com>     *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef SKETCHERGUI_DrawSketchHandlerTrimming_H
-#define SKETCHERGUI_DrawSketchHandlerTrimming_H
+#pragma once
 
 #include <QApplication>
 #include <Base/Tools.h>
@@ -82,6 +83,8 @@ public:
 
 class DrawSketchHandlerTrimming: public DrawSketchHandler
 {
+    Q_DECLARE_TR_FUNCTIONS(SketcherGui::DrawSketchHandlerTrimming)
+
 public:
     DrawSketchHandlerTrimming() = default;
     ~DrawSketchHandlerTrimming() override
@@ -107,12 +110,14 @@ public:
         auto sk = sketchgui->getObject<Sketcher::SketchObject>();
         int GeoId1, GeoId2;
         Base::Vector3d intersect1, intersect2;
-        if (!sk->seekTrimPoints(GeoId,
-                                Base::Vector3d(onSketchPos.x, onSketchPos.y, 0),
-                                GeoId1,
-                                intersect1,
-                                GeoId2,
-                                intersect2)) {
+        if (!sk->seekTrimPoints(
+                GeoId,
+                Base::Vector3d(onSketchPos.x, onSketchPos.y, 0),
+                GeoId1,
+                intersect1,
+                GeoId2,
+                intersect2
+            )) {
             return;
         }
 
@@ -174,21 +179,25 @@ public:
         if (geo->isDerivedFrom<Part::GeomTrimmedCurve>() || geo->is<Part::GeomCircle>()
             || geo->is<Part::GeomEllipse>() || geo->is<Part::GeomBSplineCurve>()) {
             try {
-                Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Trim edge"));
-                Gui::cmdAppObjectArgs(sketchgui->getObject(),
-                                      "trim(%d,App.Vector(%f,%f,0))",
-                                      GeoId,
-                                      onSketchPos.x,
-                                      onSketchPos.y);
-                Gui::Command::commitCommand();
+                openCommand(QT_TRANSLATE_NOOP("Command", "Trim edge"));
+                Gui::cmdAppObjectArgs(
+                    sketchgui->getObject(),
+                    "trim(%d,App.Vector(%f,%f,0))",
+                    GeoId,
+                    onSketchPos.x,
+                    onSketchPos.y
+                );
+                commitCommand();
                 tryAutoRecompute(sketchgui->getObject<Sketcher::SketchObject>());
             }
             catch (const Base::Exception&) {
-                Gui::NotifyError(sketchgui,
-                                 QT_TRANSLATE_NOOP("Notifications", "Error"),
-                                 QT_TRANSLATE_NOOP("Notifications", "Failed to trim edge"));
+                Gui::NotifyError(
+                    sketchgui,
+                    QT_TRANSLATE_NOOP("Notifications", "Error"),
+                    QT_TRANSLATE_NOOP("Notifications", "Failed to trim edge")
+                );
 
-                Gui::Command::abortCommand();
+                abortCommand();
             }
         }
     }
@@ -221,5 +230,3 @@ public:
 };
 
 }  // namespace SketcherGui
-
-#endif  // SKETCHERGUI_DrawSketchHandlerTrimming_H

@@ -23,8 +23,7 @@
  ***************************************************************************/
 
 
-#ifndef BASE_CONVERTER_H
-#define BASE_CONVERTER_H
+#pragma once
 
 #include <tuple>
 #include "Rotation.h"
@@ -101,9 +100,11 @@ Vec make_vec(const std::tuple<float_type, float_type, float_type>&& ft)
 {
     using traits_type = vec_traits<Vec>;
     using float_traits_type = typename traits_type::float_type;
-    return Vec(float_traits_type(std::get<0>(ft)),
-               float_traits_type(std::get<1>(ft)),
-               float_traits_type(std::get<2>(ft)));
+    return Vec(
+        float_traits_type(std::get<0>(ft)),
+        float_traits_type(std::get<1>(ft)),
+        float_traits_type(std::get<2>(ft))
+    );
 }
 
 // type with four floats
@@ -112,10 +113,12 @@ Vec make_vec(const std::tuple<float_type, float_type, float_type, float_type>&& 
 {
     using traits_type = vec_traits<Vec>;
     using float_traits_type = typename traits_type::float_type;
-    return Vec(float_traits_type(std::get<0>(ft)),
-               float_traits_type(std::get<1>(ft)),
-               float_traits_type(std::get<2>(ft)),
-               float_traits_type(std::get<3>(ft)));
+    return Vec(
+        float_traits_type(std::get<0>(ft)),
+        float_traits_type(std::get<1>(ft)),
+        float_traits_type(std::get<2>(ft)),
+        float_traits_type(std::get<3>(ft))
+    );
 }
 
 template<class Vec1, class Vec2>
@@ -129,5 +132,3 @@ inline Vec1 convertTo(const Vec2& vec)
 }
 
 }  // namespace Base
-
-#endif  // BASE_CONVERTER_H

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   (c) 2009, 2010 Yorik van Havre <yorik@uncreated.net>                  *
 # *   (c) 2009, 2010 Ken Cline <cline@frii.com>                             *
@@ -31,6 +33,7 @@ into solid bodies.
 
 They are more complex that simple text annotations.
 """
+
 ## @package gui_shapestrings
 # \ingroup draftguitools
 # \brief Provides GUI tools to create text shapes with a particular font.

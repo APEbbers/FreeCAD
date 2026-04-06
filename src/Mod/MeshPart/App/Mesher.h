@@ -22,15 +22,14 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef MESHPART_MESHER_H
-#define MESHPART_MESHER_H
+#pragma once
 
 #include <sstream>
 
 #include <Base/Stream.h>
 
 #ifdef HAVE_SMESH
-#include <SMESH_Version.h>
+# include <SMESH_Version.h>
 #endif
 
 class TopoDS_Shape;
@@ -259,5 +258,3 @@ private:
 };
 
 }  // namespace MeshPart
-
-#endif  // MESHPART_MESHER_H

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2009, 2010 Yorik van Havre <yorik@uncreated.net>        *
 # *   Copyright (c) 2009, 2010 Ken Cline <cline@frii.com>                   *
@@ -26,6 +28,7 @@
 
 This includes linear dimensions, radial dimensions, and angular dimensions.
 """
+
 ## @package make_dimension
 # \ingroup draftmake
 # \brief Provides functions to create Linear or AngularDimension objects.

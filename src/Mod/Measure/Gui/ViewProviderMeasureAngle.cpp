@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2023 David Friedli <david[at]friedli-be.ch>             *
  *   Copyright (c) 2013 Thomas Anderson <blobfish[at]gmx.com>              *
@@ -166,22 +168,24 @@ SbMatrix ViewProviderMeasureAngle::getMatrix()
         gp_Vec yAxis = zAxis.Crossed(xAxis).Normalized();
         zAxis = xAxis.Crossed(yAxis).Normalized();
 
-        dimSys = SbMatrix(xAxis.X(),
-                          yAxis.X(),
-                          zAxis.X(),
-                          origin.X(),
-                          xAxis.Y(),
-                          yAxis.Y(),
-                          zAxis.Y(),
-                          origin.Y(),
-                          xAxis.Z(),
-                          yAxis.Z(),
-                          zAxis.Z(),
-                          origin.Z(),
-                          0.0,
-                          0.0,
-                          0.0,
-                          1.0);
+        dimSys = SbMatrix(
+            xAxis.X(),
+            yAxis.X(),
+            zAxis.X(),
+            origin.X(),
+            xAxis.Y(),
+            yAxis.Y(),
+            zAxis.Y(),
+            origin.Y(),
+            xAxis.Z(),
+            yAxis.Z(),
+            zAxis.Z(),
+            origin.Z(),
+            0.0,
+            0.0,
+            0.0,
+            1.0
+        );
         dimSys = dimSys.transpose();
 
         radius = midPointProjection.Magnitude();
@@ -217,7 +221,7 @@ SbMatrix ViewProviderMeasureAngle::getMatrix()
         gp_Vec extrema2Vector(extremaPoint2.XYZ());
         radius = (loc1 - originVector).Magnitude();
         double legOne = (extrema2Vector - originVector).Magnitude();
-        if (legOne > Precision::Confusion()) {
+        if (legOne > Precision::Confusion() && legOne < radius) {
             double legTwo = sqrt(pow(radius, 2) - pow(legOne, 2));
             gp_Vec projectionVector(vector2);
             projectionVector.Normalize();
@@ -228,28 +232,33 @@ SbMatrix ViewProviderMeasureAngle::getMatrix()
             gp_Vec otherSide(loc1 - originVector);
             otherSide.Normalize();
         }
+        else {
+            thirdPoint = originVector + vector2.Normalized() * radius;
+        }
 
         gp_Vec xAxis = (loc1 - originVector).Normalized();
         gp_Vec fakeYAxis = (thirdPoint - originVector).Normalized();
         gp_Vec zAxis = (xAxis.Crossed(fakeYAxis)).Normalized();
         gp_Vec yAxis = zAxis.Crossed(xAxis).Normalized();
 
-        dimSys = SbMatrix(xAxis.X(),
-                          yAxis.X(),
-                          zAxis.X(),
-                          dimensionOriginPoint.X(),
-                          xAxis.Y(),
-                          yAxis.Y(),
-                          zAxis.Y(),
-                          dimensionOriginPoint.Y(),
-                          xAxis.Z(),
-                          yAxis.Z(),
-                          zAxis.Z(),
-                          dimensionOriginPoint.Z(),
-                          0.0,
-                          0.0,
-                          0.0,
-                          1.0);
+        dimSys = SbMatrix(
+            xAxis.X(),
+            yAxis.X(),
+            zAxis.X(),
+            dimensionOriginPoint.X(),
+            xAxis.Y(),
+            yAxis.Y(),
+            zAxis.Y(),
+            dimensionOriginPoint.Y(),
+            xAxis.Z(),
+            yAxis.Z(),
+            zAxis.Z(),
+            dimensionOriginPoint.Z(),
+            0.0,
+            0.0,
+            0.0,
+            1.0
+        );
 
         dimSys = dimSys.transpose();
     }
@@ -290,7 +299,8 @@ ViewProviderMeasureAngle::ViewProviderMeasureAngle()
     engineAngle->A.connectFrom(&arcEngine->midpoint);
     engineAngle->B.connectFrom(&pLabelTranslation->translation);
     engineAngle->expression.setValue(
-        "tA=normalize(A); tB=normalize(B); oa=atan2(tB[1], tB[0])-atan2(tA[1], tA[0])");
+        "tA=normalize(A); tB=normalize(B); oa=atan2(tB[1], tB[0])-atan2(tA[1], tA[0])"
+    );
 
     Gui::ArcEngine* arcEngineSecondary = new Gui::ArcEngine();
     arcEngineSecondary->radius.connectFrom(&calculatorRadius->oa);
@@ -332,8 +342,7 @@ void ViewProviderMeasureAngle::redrawAnnotation()
         pcTransform->setMatrix(matrix);
     }
     catch (const Base::Exception& e) {
-        Base::Console().error("Error in ViewProviderMeasureAngle::redrawAnnotation: %s\n",
-                              e.what());
+        Base::Console().error("Error in ViewProviderMeasureAngle::redrawAnnotation: %s\n", e.what());
         return;
     }
 

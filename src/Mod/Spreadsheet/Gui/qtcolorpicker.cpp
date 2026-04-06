@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-only OR GPL-3.0-only
+
 /****************************************************************************
 **
 ** This file is part of a Qt Solutions component.
@@ -549,6 +551,7 @@ ColorPickerPopup::ColorPickerPopup(int width, bool withColorDialog,
 {
     setFrameStyle(QFrame::StyledPanel);
     setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
+    setProperty("class", "popup");
 
     setFocusPolicy(Qt::StrongFocus);
     setMouseTracking(true);

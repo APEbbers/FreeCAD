@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2014 Yorik van Havre <yorik@uncreated.net>              *
 # *   Copyright (c) 2020 Eliud Cabrera Castillo <e.cabrera-castillo@tum.de> *
@@ -23,6 +25,7 @@
 # *                                                                         *
 # ***************************************************************************
 """Provides the viewprovider code for the Layer object."""
+
 ## @package view_layer
 # \ingroup draftviewproviders
 # \brief Provides the viewprovider code for the Layer object.
@@ -565,22 +568,7 @@ class ViewProviderLayerContainer:
 
     def add_layer(self):
         """Creates a new layer"""
-        import Draft
-
-        doc = App.ActiveDocument
-        doc.openTransaction(translate("draft", "Add New Layer"))
-
-        Draft.make_layer(
-            name=None,
-            line_color=None,
-            shape_color=None,
-            line_width=None,
-            draw_style=None,
-            transparency=None,
-        )
-
-        doc.recompute()
-        doc.commitTransaction()
+        Gui.runCommand("Draft_Layer")
 
     def reassign_props(self):
         for obj in self.Object.Group:

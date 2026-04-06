@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   (c) 2009, 2010 Yorik van Havre <yorik@uncreated.net>                  *
 # *   (c) 2009, 2010 Ken Cline <cline@frii.com>                             *
@@ -23,6 +25,7 @@
 # *                                                                         *
 # ***************************************************************************
 """Provides GUI tools to create circular arc objects."""
+
 ## @package gui_arcs
 # \ingroup draftguitools
 # \brief Provides GUI tools to create circular arc objects.
@@ -34,7 +37,6 @@ from PySide.QtCore import QT_TRANSLATE_NOOP
 
 import FreeCAD as App
 import FreeCADGui as Gui
-import Draft
 import DraftVecUtils
 from FreeCAD import Units as U
 from draftguitools import gui_base
@@ -247,7 +249,7 @@ class Arc(gui_base_original.Creator):
                     if self.step == 0:  # choose center
                         if not self.support:
                             gui_tool_utils.getSupport(arg)
-                            (self.point, ctrlPoint, info) = gui_tool_utils.getPoint(self, arg)
+                            self.point, ctrlPoint, info = gui_tool_utils.getPoint(self, arg)
                         if gui_tool_utils.hasMod(arg, gui_tool_utils.get_mod_alt_key()):
                             snapped = self.view.getObjectInfo(
                                 (arg["Position"][0], arg["Position"][1])

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2015 Eivind Kvedalen <eivind@kvedalen.name>             *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef CELL_H
-#define CELL_H
+#pragma once
 
 #include <set>
 #include <string>
@@ -111,8 +112,7 @@ public:
 
     bool hasException() const
     {
-        return isUsed(EXCEPTION_SET) || isUsed(PARSE_EXCEPTION_SET)
-            || isUsed(RESOLVE_EXCEPTION_SET);
+        return isUsed(EXCEPTION_SET) || isUsed(PARSE_EXCEPTION_SET) || isUsed(RESOLVE_EXCEPTION_SET);
     }
 
     void moveAbsolute(App::CellAddress newAddress);
@@ -214,5 +214,3 @@ private:
 };
 
 }  // namespace Spreadsheet
-
-#endif  // CELL_H

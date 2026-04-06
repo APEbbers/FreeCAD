@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2009, 2010 Yorik van Havre <yorik@uncreated.net>        *
 # *   Copyright (c) 2009, 2010 Ken Cline <cline@frii.com>                   *
@@ -30,6 +32,7 @@
 The copies will be created along a path, like a polyline, B-spline,
 or Bezier curve.
 """
+
 ## @package gui_patharray
 # \ingroup draftguitools
 # \brief Provides GUI tools to create PathArray objects.

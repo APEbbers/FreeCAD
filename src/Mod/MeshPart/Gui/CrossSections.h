@@ -22,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef MESHPARTGUI_CROSSSECTIONS_H
-#define MESHPARTGUI_CROSSSECTIONS_H
+#pragma once
 
 #include <QDialog>
 #include <QPointer>
@@ -55,9 +54,11 @@ class CrossSections: public QDialog
     };
 
 public:
-    explicit CrossSections(const Base::BoundBox3d& bb,
-                           QWidget* parent = nullptr,
-                           Qt::WindowFlags fl = Qt::WindowFlags());
+    explicit CrossSections(
+        const Base::BoundBox3d& bb,
+        QWidget* parent = nullptr,
+        Qt::WindowFlags fl = Qt::WindowFlags()
+    );
     ~CrossSections() override;
     void accept() override;
     void apply();
@@ -112,5 +113,3 @@ private:
 };
 
 }  // namespace MeshPartGui
-
-#endif  // MESHPARTGUI_CROSSSECTIONS_H

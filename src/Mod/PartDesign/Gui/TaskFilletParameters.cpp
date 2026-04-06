@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2011 Juergen Riegel <FreeCAD@juergen-riegel.net>        *
  *                                                                         *
@@ -19,7 +21,6 @@
  *   Suite 330, Boston, MA  02111-1307, USA                                *
  *                                                                         *
  ***************************************************************************/
-
 
 
 #include <QAction>
@@ -119,7 +120,8 @@ void TaskFilletParameters::onSelectionChanged(const Gui::SelectionChanges& msg)
         if (selectionMode == refSel) {
             referenceSelected(msg, ui->listWidgetReferences);
         }
-    } else if (msg.Type == Gui::SelectionChanges::ClrSelection) {
+    }
+    else if (msg.Type == Gui::SelectionChanges::ClrSelection) {
         // TODO: the gizmo position should be only recalculated when the feature associated
         // with the gizmo is removed from the list
         setGizmoPositions();
@@ -252,7 +254,7 @@ void TaskFilletParameters::setGizmoPositions()
     // The dragger length won't be equal to the radius if the two faces
     // are not orthogonal so this correction is needed
     double angle = props1.dir.GetAngle(props2.dir);
-    double correction = 1/std::tan(angle/2);
+    double correction = 1 / std::tan(angle / 2);
 
     radiusGizmo->setMultFactor(correction);
     radiusGizmo2->setMultFactor(correction);

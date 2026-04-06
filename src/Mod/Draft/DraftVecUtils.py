@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2009, 2010 Yorik van Havre <yorik@uncreated.net>        *
 # *   Copyright (c) 2009, 2010 Ken Cline <cline@frii.com>                   *
@@ -24,6 +26,7 @@
 Vector math utilities used primarily in the Draft workbench
 but which can also be used in other workbenches and in macros.
 """
+
 ## \defgroup DRAFTVECUTILS DraftVecUtils
 #  \ingroup UTILITIES
 #  \brief Vector math utilities used in Draft workbench

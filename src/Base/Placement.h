@@ -22,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef BASE_PLACEMENT_H
-#define BASE_PLACEMENT_H
+#pragma once
 
 #include <string>
 
@@ -109,8 +108,7 @@ public:
     //@}
 
     static Placement slerp(const Placement& p0, const Placement& p1, double t);
-    static Placement
-    sclerp(const Placement& p0, const Placement& p1, double t, bool shorten = true);
+    static Placement sclerp(const Placement& p0, const Placement& p1, double t, bool shorten = true);
 
     /// Returns string representation of the placement, useful for debugging
     std::string toString() const;
@@ -121,6 +119,3 @@ private:
 };
 
 }  // namespace Base
-
-
-#endif  // BASE_PLACEMENT_H

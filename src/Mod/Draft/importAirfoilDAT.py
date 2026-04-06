@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 ## @package importAirfoilDAT
 #  \ingroup DRAFT
 #  \brief Airfoil (.dat) file importer
@@ -8,6 +10,7 @@ Airfoil (.dat) file importer
 
 This module provides support for importing airfoil .dat files.
 """
+
 # Check code with
 # flake8 --ignore=E226,E266,E401,W503
 
@@ -39,10 +42,10 @@ __url__ = "https://www.freecad.org"
 import re
 import os
 import FreeCAD
-import Draft
 import Part
 from FreeCAD import Vector
 from FreeCAD import Console as FCC
+from draftmake import make_wire
 from draftutils.utils import pyopen
 
 if FreeCAD.GuiUp:
@@ -173,7 +176,7 @@ def process(filename):
 
     # do we use the parametric Draft Wire?
     if useDraftWire:
-        obj = Draft.make_wire(coords, True)
+        obj = make_wire.make_wire(coords, True)
         # obj.label = airfoilname
     else:
         # alternate solution, uses common Part Faces

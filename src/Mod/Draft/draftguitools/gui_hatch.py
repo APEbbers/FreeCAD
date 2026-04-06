@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *                                                                         *
 # *   Copyright (c) 2021 Yorik van Havre <yorik@uncreated.net>              *
@@ -93,8 +95,8 @@ class Draft_Hatch_TaskPanel:
         if hasattr(self.baseobj, "File") and hasattr(self.baseobj, "Pattern"):
             # modify existing hatch object
             o = 'FreeCAD.ActiveDocument.getObject("' + self.baseobj.Name + '")'
-            FreeCADGui.doCommand(o + '.File="' + self.form.File.property("fileName") + '"')
-            FreeCADGui.doCommand(o + '.Pattern="' + self.form.Pattern.currentText() + '"')
+            FreeCADGui.doCommand(o + ".File=" + repr(self.form.File.property("fileName")))
+            FreeCADGui.doCommand(o + ".Pattern=" + repr(self.form.Pattern.currentText()))
             FreeCADGui.doCommand(o + ".Scale=" + str(self.form.Scale.value()))
             FreeCADGui.doCommand(o + ".Rotation=" + str(self.form.Rotation.value()))
             FreeCADGui.doCommand(o + ".Translate=" + str(self.form.Translate.isChecked()))
@@ -104,9 +106,9 @@ class Draft_Hatch_TaskPanel:
             FreeCADGui.addModule("Draft")
             cmd = "Draft.make_hatch("
             cmd += 'baseobject=FreeCAD.ActiveDocument.getObject("' + self.baseobj.Name
-            cmd += '"),filename="' + self.form.File.property("fileName")
-            cmd += '",pattern="' + self.form.Pattern.currentText()
-            cmd += '",scale=' + str(self.form.Scale.value())
+            cmd += '"),filename=' + repr(self.form.File.property("fileName"))
+            cmd += ",pattern=" + repr(self.form.Pattern.currentText())
+            cmd += ",scale=" + str(self.form.Scale.value())
             cmd += ",rotation=" + str(self.form.Rotation.value())
             cmd += ",translate=" + str(self.form.Translate.isChecked()) + ")"
             FreeCADGui.doCommand(cmd)
@@ -123,6 +125,11 @@ class Draft_Hatch_TaskPanel:
         FreeCAD.ActiveDocument.recompute()
 
     def onFileChanged(self, filename):
+
+        if filename[0] == "." and self.baseobj:
+            # File path relative to the FreeCAD file directory.
+            filename = os.path.join(os.path.dirname(self.baseobj.Document.FileName), filename)
+            filename = os.path.abspath(filename)
 
         pat = self.form.Pattern.currentText()
         self.form.Pattern.clear()

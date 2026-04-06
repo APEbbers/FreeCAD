@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
 
 set(CAMSimulator_LIBS
     Path
@@ -23,6 +24,8 @@ SET(CAMSimulator_SRCS_Module
     DlgCAMSimulator.cpp
     DlgCAMSimulator.h
     PreCompiled.h
+    ViewCAMSimulator.cpp
+    ViewCAMSimulator.h
 )
 
 SET(CAMSimulator_SRCS_Core

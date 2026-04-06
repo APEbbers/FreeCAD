@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2009, 2010 Yorik van Havre <yorik@uncreated.net>        *
 # *   Copyright (c) 2009, 2010 Ken Cline <cline@frii.com>                   *
@@ -26,6 +28,7 @@
 It just creates a `Part::Mirroring` object, and sets the appropriate
 `Source` and `Normal` properties.
 """
+
 ## @package mirror
 # \ingroup draftfunctions
 # \brief Provides functions to produce a mirrored object.

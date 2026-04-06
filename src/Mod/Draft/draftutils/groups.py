@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   (c) 2009, 2010                                                        *
 # *   Yorik van Havre <yorik@uncreated.net>, Ken Cline <cline@frii.com>     *
@@ -27,6 +29,7 @@
 The functions here are also used in the Arch Workbench as some of
 the objects created with this workbench work like groups.
 """
+
 ## @package groups
 # \ingroup draftutils
 # \brief Provides utility functions to do operations with groups.

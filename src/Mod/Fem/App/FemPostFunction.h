@@ -20,8 +20,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef Fem_FemPostFunction_H
-#define Fem_FemPostFunction_H
+#pragma once
 
 #include <vtkBoundingBox.h>
 #include <vtkBox.h>
@@ -92,9 +91,11 @@ protected:
     void unsetupObject() override;
 
     // update documents
-    void handleChangedPropertyName(Base::XMLReader& reader,
-                                   const char* TypeName,
-                                   const char* PropName) override;
+    void handleChangedPropertyName(
+        Base::XMLReader& reader,
+        const char* TypeName,
+        const char* PropName
+    ) override;
 };
 
 // ---------------------------------------------------------------------------
@@ -203,6 +204,3 @@ protected:
 };
 
 }  // namespace Fem
-
-
-#endif  // Fem_FemPostFunction_H

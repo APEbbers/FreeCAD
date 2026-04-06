@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   (c) 2009, 2010 Yorik van Havre <yorik@uncreated.net>                  *
 # *   (c) 2009, 2010 Ken Cline <cline@frii.com>                             *
@@ -26,6 +28,7 @@
 
 The textual block can consist of multiple lines.
 """
+
 ## @package gui_texts
 # \ingroup draftguitools
 # \brief Provides GUI tools to create simple Text objects.
@@ -146,7 +149,7 @@ class Text(gui_base_original.Creator):
                 self.finish()
         elif arg["Type"] == "SoLocation2Event":  # mouse movement detection
             if self.active:
-                (self.point, ctrlPoint, info) = gui_tool_utils.getPoint(self, arg)
+                self.point, ctrlPoint, info = gui_tool_utils.getPoint(self, arg)
             gui_tool_utils.redraw3DView()
         elif arg["Type"] == "SoMouseButtonEvent":
             if arg["State"] == "DOWN" and arg["Button"] == "BUTTON1":

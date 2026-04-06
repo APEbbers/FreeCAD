@@ -83,6 +83,8 @@ target_include_directories(
     FreeCADGui
     SYSTEM
     PRIVATE
+    ${FastSignals_INCLUDE_DIRS}
+    ${Boost_INCLUDE_DIRS}
     ${EIGEN3_INCLUDE_DIR}
     ${3DCONNEXION_INCLUDE_DIR}
 )
@@ -99,6 +101,7 @@ endif(MSVC)
 if(MSVC)
     set(FreeCADGui_LIBS
          FreeCADApp
+         libfastsignals
          ${OPENGL_gl_LIBRARY}
     )
 
@@ -111,6 +114,7 @@ if(MSVC)
 else(MSVC)
     set(FreeCADGui_LIBS
         FreeCADApp
+        libfastsignals
         ${Boost_LIBRARIES}
         ${OPENGL_gl_LIBRARY}
         ${3DCONNEXION_LINKFLAGS}
@@ -130,7 +134,12 @@ else()
 endif()
 
 if (WIN32)
+    # In order to make menus and tooltips usable in fullscreen under Windows we need to call setHasBorderInFullScreen(),
+    # defined in Qt's private Gui code. See issue #7563, and the calls to QNativeInterface::Private in MainWindow.cpp
     if(FREECAD_QT_MAJOR_VERSION EQUAL 6)
+        if(Qt6_VERSION VERSION_GREATER_EQUAL "6.10.0")
+            find_package(Qt6 REQUIRED COMPONENTS GuiPrivate)
+        endif()
         list(APPEND FreeCADGui_LIBS
             Qt6::GuiPrivate
         )
@@ -481,6 +490,7 @@ SET(Gui_UIC_SRCS
     InputVector.ui
     Placement.ui
     TaskTransform.ui
+    TaskCommandLink.ui
     TextureMapping.ui
     TaskView/TaskAppearance.ui
     TaskView/TaskOrientation.ui
@@ -569,6 +579,7 @@ SET(Dialog_CPP_SRCS
     TaskDlgRelocation.cpp
     Dialogs/DlgCheckableMessageBox.cpp
     TaskTransform.cpp
+    TaskCommandLink.cpp
     Dialogs/DlgUndoRedo.cpp
     InputVector.cpp
     Placement.cpp
@@ -611,6 +622,7 @@ SET(Dialog_HPP_SRCS
     Dialogs/DlgVersionMigrator.h
     TaskDlgRelocation.h
     TaskTransform.h
+    TaskCommandLink.h
     Dialogs/DlgUndoRedo.h
     InputVector.h
     Placement.h
@@ -1129,6 +1141,7 @@ SET(Inventor_CPP_SRCS
     Inventor/SoDrawingGrid.cpp
     Inventor/SoFCBackgroundGradient.cpp
     Inventor/SoFCBoundingBox.cpp
+    Inventor/SoNaviCube.cpp
     Inventor/SoMouseWheelEvent.cpp
     Inventor/SoFCTransform.cpp
     Inventor/SoToggleSwitch.cpp
@@ -1169,6 +1182,7 @@ SET(Inventor_SRCS
     Inventor/SoDrawingGrid.h
     Inventor/SoFCBackgroundGradient.h
     Inventor/SoFCBoundingBox.h
+    Inventor/SoNaviCube.h
     Inventor/SoMouseWheelEvent.h
     Inventor/SoFCTransform.h
     Inventor/SoToggleSwitch.h
@@ -1226,6 +1240,7 @@ SET(Widget_CPP_SRCS
     ElideLabel.cpp
     ElideCheckBox.cpp
     FontScaledSVG.cpp
+    SplitButton.cpp
 )
 SET(Widget_HPP_SRCS
     ComboLinks.h
@@ -1251,6 +1266,7 @@ SET(Widget_HPP_SRCS
     ElideLabel.h
     ElideCheckBox.h
     FontScaledSVG.h
+    SplitButton.h
 )
 SET(Widget_SRCS
     ${Widget_CPP_SRCS}
@@ -1369,6 +1385,7 @@ SET(FreeCADGui_CPP_SRCS
     ExpressionCompleter.cpp
     FileHandler.cpp
     FileHandler.h
+    FreeCADStyle.cpp
     GuiApplication.cpp
     GuiApplicationNativeEventAware.cpp
     GuiConsole.cpp
@@ -1383,6 +1400,7 @@ SET(FreeCADGui_CPP_SRCS
     SpaceballEvent.cpp
     StatusBarLabel.cpp
     PreferencePackManager.cpp
+    ProgramInformation.cpp
     Thumbnail.cpp
     Utilities.cpp
     WaitCursor.cpp
@@ -1390,6 +1408,7 @@ SET(FreeCADGui_CPP_SRCS
     StartupProcess.cpp
     TransactionObject.cpp
     ToolHandler.cpp
+    StyleParameters/Value.cpp
     StyleParameters/Parser.cpp
     StyleParameters/ParameterManager.cpp
 )
@@ -1406,6 +1425,7 @@ SET(FreeCADGui_SRCS
     ExpressionBindingPy.h
     ExpressionCompleter.h
     FreeCADGuiInit.py
+    FreeCADStyle.h
     GraphicsViewZoom.h
     GuiApplication.h
     GuiApplicationNativeEventAware.h
@@ -1425,6 +1445,7 @@ SET(FreeCADGui_SRCS
     Control.h
     SpaceballEvent.h
     PreferencePackManager.h
+    ProgramInformation.h
     Thumbnail.h
     Tools.h
     Utilities.h
@@ -1434,6 +1455,7 @@ SET(FreeCADGui_SRCS
     StatusBarLabel.h
     TransactionObject.h
     ToolHandler.h
+    StyleParameters/Value.h
     StyleParameters/Parser.h
     StyleParameters/ParameterManager.h
 )
@@ -1512,8 +1534,8 @@ if(FREECAD_USE_PCH)
             PROPERTIES SKIP_PRECOMPILE_HEADERS TRUE)
 endif(FREECAD_USE_PCH)
 
-if (FREECAD_USE_QT_FILEDIALOG)
-    set_source_files_properties(FileDialog.cpp PROPERTIES COMPILE_FLAGS -DUSE_QT_FILEDIALOG)
+if (FREECAD_USE_QT_DIALOGS)
+    set_source_files_properties(FileDialog.cpp PROPERTIES COMPILE_FLAGS -DUSE_QT_DIALOGS)
 endif()
 
 # Suppress some very long Eigen3 warnings of older versions and

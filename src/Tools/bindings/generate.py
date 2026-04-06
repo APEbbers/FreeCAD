@@ -1,4 +1,6 @@
 #! python
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # (c) 2006 Jürgen Riegel  GPL
 
 import os
@@ -8,7 +10,6 @@ import model.generateModel_Module
 import model.generateModel_Python
 import templates.templateModule
 import templates.templateClassPyExport
-
 
 Usage = """generate - generates a FreeCAD Module out of an XML or Python model
 

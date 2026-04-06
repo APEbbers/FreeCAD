@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2013 Yorik van Havre <yorik@uncreated.net>              *
 # *   Copyright (c) 2019 Eliud Cabrera Castillo <e.cabrera-castillo@tum.de> *
@@ -242,6 +244,40 @@ class DraftModification(test_base.DraftTestCaseDoc):
         if self.doc.Wire001:
             obj = True
         self.assertTrue(obj, "'{}' failed".format(operation))
+
+    def test_split_at_endpoint(self):
+        """Split a Draft Wire at its endpoints should be a no-op."""
+        operation = "Draft_Split endpoint"
+        _msg("  Test '{}'".format(operation))
+        a = Vector(0, 0, 0)
+        b = Vector(2, 2, 0)
+        c = Vector(4, 0, 0)
+        wire = Draft.make_wire([a, b, c])
+        self.doc.recompute()
+        original_points = list(wire.Points)
+        obj_count = len(self.doc.Objects)
+
+        result = Draft.split(wire, a, 1)
+        self.assertIsNone(result, "'{}' first endpoint should return None".format(operation))
+        self.assertEqual(
+            wire.Points, original_points, "'{}' wire should be unchanged".format(operation)
+        )
+        self.assertEqual(
+            len(self.doc.Objects),
+            obj_count,
+            "'{}' no new object should be created".format(operation),
+        )
+
+        result = Draft.split(wire, c, 2)
+        self.assertIsNone(result, "'{}' last endpoint should return None".format(operation))
+        self.assertEqual(
+            wire.Points, original_points, "'{}' wire should be unchanged".format(operation)
+        )
+        self.assertEqual(
+            len(self.doc.Objects),
+            obj_count,
+            "'{}' no new object should be created".format(operation),
+        )
 
     def test_upgrade(self):
         """Upgrade two Lines into a closed Wire, then draftify it."""

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Jan Rheinländer                                    *
  *                                   <jrheinlaender@users.sourceforge.net> *
@@ -22,8 +24,7 @@
  ***************************************************************************/
 
 
-#ifndef GUI_TASKVIEW_TaskAttacher_H
-#define GUI_TASKVIEW_TaskAttacher_H
+#pragma once
 
 #include <Gui/Selection/Selection.h>
 #include <Gui/DocumentObserver.h>
@@ -40,34 +41,41 @@
 class Ui_TaskAttacher;
 class QLineEdit;
 
-namespace App {
+namespace App
+{
 class Property;
 }
 
-namespace Gui {
+namespace Gui
+{
 class ViewProviderPlane;
 class ViewProvider;
-}
+}  // namespace Gui
 
-namespace PartGui {
+namespace PartGui
+{
 
 class Ui_TaskAttacher;
 
 
-class PartGuiExport TaskAttacher : public Gui::TaskView::TaskBox, public Gui::SelectionObserver
+class PartGuiExport TaskAttacher: public Gui::TaskView::TaskBox, public Gui::SelectionObserver
 {
     Q_OBJECT
 
 public:
-    using VisibilityFunction =  std::function<void (bool, const std::string &, Gui::ViewProviderDocumentObject*,
-                                App::DocumentObject *, const std::string&)>;
+    using VisibilityFunction = std::function<
+        void(bool, const std::string&, Gui::ViewProviderDocumentObject*, App::DocumentObject*, const std::string&)>;
 
-    explicit TaskAttacher(Gui::ViewProviderDocumentObject *ViewProvider, QWidget *parent,
-                 QString picture,
-                 QString text, VisibilityFunction func = 0);
+    explicit TaskAttacher(
+        Gui::ViewProviderDocumentObject* ViewProvider,
+        QWidget* parent,
+        QString picture,
+        QString text,
+        VisibilityFunction func = 0
+    );
     ~TaskAttacher() override;
 
-    bool   getFlip() const;
+    bool getFlip() const;
 
     /**
      * @brief getActiveMapMode returns either the default mode for selected
@@ -76,7 +84,13 @@ public:
      */
     Attacher::eMapMode getActiveMapMode();
 
-    bool isCompleted() const { return completed; }
+    bool isCompleted() const
+    {
+        return completed;
+    }
+
+Q_SIGNALS:
+    void placementUpdated();
 
 private Q_SLOTS:
     void onAttachmentOffsetChanged(double, int idx);
@@ -99,7 +113,7 @@ private Q_SLOTS:
     void visibilityAutomation(bool opening_not_closing);
 
 protected:
-    void changeEvent(QEvent *e) override;
+    void changeEvent(QEvent* e) override;
 
 private:
     void objectDeleted(const Gui::ViewProviderDocumentObject&);
@@ -122,12 +136,13 @@ private:
 
     void findCorrectObjAndSubInThisContext(App::DocumentObject*& obj, std::string& sub);
     void handleInitialSelection();
-    struct SubAndObjName {
+    struct SubAndObjName
+    {
         std::string objName;
         std::string subName;
     };
-    void addToReference(SubAndObjName  pair);
-    void addToReference(const std::vector<SubAndObjName >& pairs);
+    void addToReference(SubAndObjName pair);
+    void addToReference(const std::vector<SubAndObjName>& pairs);
 
     /**
      * @brief updateListOfModes Fills the mode list with modes that apply to
@@ -143,7 +158,7 @@ private:
     void showPlacementUtilities();
 
 protected:
-    Gui::ViewProviderDocumentObject *ViewProvider;
+    Gui::ViewProviderDocumentObject* ViewProvider;
     std::string ObjectName;
 
 private:
@@ -152,13 +167,16 @@ private:
     VisibilityFunction visibilityFunc;
 
     // TODO fix documentation here (2015-11-10, Fat-Zer)
-    int iActiveRef; //what reference is being picked in 3d view now? -1 means no one, 0-3 means a reference is being picked.
-    bool autoNext;//if we should automatically switch to next reference (true after dialog launch, false afterwards)
-    std::vector<Attacher::eMapMode> modesInList; //this list is synchronous to what is populated into listOfModes widget.
+    int iActiveRef;  // what reference is being picked in 3d view now? -1 means no one, 0-3 means a
+                     // reference is being picked.
+    bool autoNext;   // if we should automatically switch to next reference (true after dialog
+                     // launch, false afterwards)
+    std::vector<Attacher::eMapMode> modesInList;  // this list is synchronous to what is populated
+                                                  // into listOfModes widget.
     Attacher::SuggestResult lastSuggestResult;
     bool completed;
 
-    using Connection = boost::signals2::connection;
+    using Connection = fastsignals::connection;
     Connection connectDelObject;
     Connection connectDelDocument;
 
@@ -168,16 +186,23 @@ private:
 };
 
 /// simulation dialog for the TaskView
-class PartGuiExport TaskDlgAttacher : public Gui::TaskView::TaskDialog
+class PartGuiExport TaskDlgAttacher: public Gui::TaskView::TaskDialog
 {
     Q_OBJECT
 
 public:
-    explicit TaskDlgAttacher(Gui::ViewProviderDocumentObject *ViewProvider, bool createBox = true, std::function<void()> onAccept = {}, std::function<void()> onReject = {});
+    explicit TaskDlgAttacher(
+        Gui::ViewProviderDocumentObject* ViewProvider,
+        bool createBox = true,
+        std::function<void()> onAccept = {},
+        std::function<void()> onReject = {}
+    );
     ~TaskDlgAttacher() override;
 
     Gui::ViewProviderDocumentObject* getViewProvider() const
-    { return ViewProvider; }
+    {
+        return ViewProvider;
+    }
 
 
 public:
@@ -189,24 +214,27 @@ public:
     bool accept() override;
     /// is called by the framework if the dialog is rejected (Cancel)
     bool reject() override;
-    /// is called by the framework if the user presses the help button
+
     bool isAllowedAlterDocument() const override
-    { return false; }
+    {
+        return false;
+    }
 
     /// returns for Close and Help button
     QDialogButtonBox::StandardButtons getStandardButtons() const override
-    { return QDialogButtonBox::Ok|QDialogButtonBox::Cancel; }
+    {
+        return QDialogButtonBox::Ok | QDialogButtonBox::Cancel;
+    }
 
 protected:
-    Gui::ViewProviderDocumentObject   *ViewProvider;
+    Gui::ViewProviderDocumentObject* ViewProvider;
 
-    TaskAttacher  *parameter;
+    TaskAttacher* parameter;
 
     std::function<void()> onAccept;
     std::function<void()> onReject;
     bool accepted;
+    int tid;
 };
 
-} //namespace PartDesignGui
-
-#endif // GUI_TASKVIEW_TASKAPPERANCE_H
+}  // namespace PartGui
